@@ -70,5 +70,5 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 
 > [!IMPORTANT]
 > #### Main assumptions and simplifications in the project:
-> Since we are dealing with medical data that relates to predictions of whether or not to have a stroke (a life or death scenario), the main assumption I use throughout the project is that false negative is the most important metric for me ?
+> Since we are dealing with medical data that relates to predictions of whether or not a patient will have a stroke (a life or death scenario), the main assumption I use throughout the project is that false negative is the most important metric 
 > (since this situation means identifying a person who is going to have a stroke as a person who will not have a stroke, which is a very big risk to their life (false identification).
