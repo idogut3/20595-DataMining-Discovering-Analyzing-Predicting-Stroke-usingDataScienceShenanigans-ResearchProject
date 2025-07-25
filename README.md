@@ -43,6 +43,8 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 ### 5. **Generalization and prevention of overfitting:**
   - Goal: To ensure that the model can correctly generalize to unseen patient data.
 
+---
+
 ### Our dataset:
 
   - Id - is a unique integer identifier assigned to each patient. It ranges from 67 to 72,940 and does not contain missing values.
