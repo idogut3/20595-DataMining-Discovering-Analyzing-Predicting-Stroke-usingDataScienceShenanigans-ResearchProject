@@ -68,3 +68,7 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
   - **status_smoking** - is a categorical attribute with four possible values: "never smoked", "previously smoked", "smoker", and "unknown". Although it does not contain missing values in the traditional sense, "unknown" is used as a placeholder for data that is not available.
   - **stroke** - is the target binary variable of the dataset. A value of 1 indicates that the patient has had a stroke, and 0 indicates that he has not. There are no missing values in this field.
 
+> [!IMPORTANT]
+> ### Main assumptions and simplifications in the project:
+> Since we are dealing with medical data that relates to predictions of whether or not to have a stroke (a life or death scenario), the main assumption I use throughout the project is that false negative is the most important metric for me ?
+> (since this situation means identifying a person who is going to have a stroke as a person who will not have a stroke, which is a very big risk to their life (false identification).
