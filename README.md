@@ -1,1 +1,1 @@
-# 20595-DataMining-StrokePrediction-AI-ML-DL-StatisticalAnalysis-TheOpenUniveristyCourse
+# Discovering analyzing and predicting Stroke using DataMining techniques
