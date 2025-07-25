@@ -26,6 +26,8 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 
 ---
 
+
+
 ## The main data mining goals of the project 🧪🗃️🎯
 ### 1. **Accurate prediction of stroke risk:** 
   - Developing a predictive model that can identify various phenomena and trends that "signal" a chance of experiencing a stroke.
