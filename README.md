@@ -1,7 +1,7 @@
 # Discovering analyzing and predicting Stroke using DataMining techniques
 ![bioinformatics](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/bioinformatics.jpg)
 ## A Little about the project 
-This project was completed as part of my university DataMining course.
+This project was completed as part of my university DataMining course.🎓
 It is a project regarding stroke prediction; 
 It's goal is to find as many "early signs" for stroke, helping doctors / nurses or other health professionals to identify risks, prevent and treat patients with care based on real data.
 
@@ -24,7 +24,7 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 > 
 > [Explainable artificial intelligence for stroke prediction through comparison of deep learning and machine learning models](https://www.nature.com/articles/s41598-024-82931-5)
 
-## The main data mining goals of the project:
+## The main data mining goals of the project 🧪🗃️🎯
 ### 1. **Accurate prediction of stroke risk:** 
   - Developing a predictive model that can identify various phenomena and trends that "signal" a chance of experiencing a stroke.
   Maximizing the model's precision, accuracy, F1 score while minimizing false positives and false negatives.
