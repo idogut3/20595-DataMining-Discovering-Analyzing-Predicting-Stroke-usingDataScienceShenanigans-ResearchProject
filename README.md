@@ -25,22 +25,22 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 > [Explainable artificial intelligence for stroke prediction through comparison of deep learning and machine learning models](https://www.nature.com/articles/s41598-024-82931-5)
 
 ## The main data mining goals of the project:
-1. **Accurate prediction of stroke risk:** 
+### 1. **Accurate prediction of stroke risk:** 
   - Developing a predictive model that can identify various phenomena and trends that "signal" a chance of experiencing a stroke.
   Maximizing the model's precision, accuracy, F1 score while minimizing false positives and false negatives.
 
-2. **Discovering the most influential characteristics and factors:**
+### 2. **Discovering the most influential characteristics and factors:**
   - Discovering which characteristics (e.g: age, hypertension, heart disease, BMI, and glucose levels) are most influential on the chance for stroke in order to interpret model behavior and gain medical insights.
 
-3. **Handling imperfect data:**
+### 3. **Handling imperfect data:**
   - Develop effective strategies or techniques for managing missing values, noisy data and information imbalance
   using SMOTE/ median fill / average fill and more...
 
-4. **Model Evaluation:**
+### 4. **Model Evaluation:**
   - Goal: To compare several prediction models, including AI-based models
   (such as KNN, SVM, RANDOM FOREST, logistic regression, XGBoost) to determine the best fit.
 
-5. **Generalization and prevention of overfitting:**
+### 5. **Generalization and prevention of overfitting:**
   - Goal: To ensure that the model can correctly generalize to unseen patient data.
 
 
