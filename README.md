@@ -10,8 +10,9 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 
 The Link for the dataset I used: [kaggle dataset link](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data).
 
-The project incorporates AI/ML/Deep Learning techniques used alongside some statistical analysis based models and label classification methods. 
-I encourage you to scroll on to dive deeper into the project.
+> [!NOTE]
+> The project incorporates AI/ML/Deep Learning techniques used alongside some statistical analysis based models and label classification methods. 
+> I encourage you to scroll on to dive deeper into the project.
 
 > [!TIP]
 > Explanations about the importance of stroke prediction and comparison of different methods can be read in the following articles published in the journal Nature in 2024 at the following addresses:
