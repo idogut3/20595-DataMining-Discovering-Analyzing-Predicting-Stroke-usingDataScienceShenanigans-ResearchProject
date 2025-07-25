@@ -13,10 +13,10 @@ The Link for the dataset I used: [kaggle dataset link](https://www.kaggle.com/da
 The project incorporates AI/ML/Deep Learning techniques used alongside some statistical analysis based models and label classification methods. 
 I encourage you to scroll on to dive deeper into the project.
 
-[!TIP]
+> [!TIP]
 > Explanations about the importance of stroke prediction and comparison of different methods can be read in the following articles published in the journal Nature in 2024 at the following addresses:
-[Predictive modelling and identification of key risk factors for stroke using machine learning](https://www.nature.com/articles/s41598-024-61665-4)
-[Explainable artificial intelligence for stroke prediction through comparison of deep learning and machine learning models](https://www.nature.com/articles/s41598-024-82931-5)
+> [Predictive modelling and identification of key risk factors for stroke using machine learning](https://www.nature.com/articles/s41598-024-61665-4)
+> [Explainable artificial intelligence for stroke prediction through comparison of deep learning and machine learning models](https://www.nature.com/articles/s41598-024-82931-5)
 
 ## A Little about the project 
 
