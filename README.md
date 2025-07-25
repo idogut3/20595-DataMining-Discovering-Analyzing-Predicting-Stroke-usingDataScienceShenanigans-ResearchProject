@@ -1,4 +1,4 @@
-# Discovering analyzing and predicting Stroke using DataMining techniques Research-Project:
+# Discovering analyzing and predicting Stroke using DataMining techniques
 ## A Little about the project 
 This project is a project I worked on as part of my university DataMining course.
 It is a project regarding stroke prediction; 
