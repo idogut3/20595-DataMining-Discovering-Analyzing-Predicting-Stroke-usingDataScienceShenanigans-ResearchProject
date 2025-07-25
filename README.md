@@ -76,6 +76,6 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 ### Missing Values:
   - Bmi values - Approximately 3.9% of records are missing - Which is 201 rows that are missing.
   - Smoking_status values - a couple of unknown values.
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Comparison%20of%20Valid%20vs%20Corrupted-Unknown%20Data.png" style="width: 50%;" />
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Breakdown%20of%20Corrupted%20Data.png" style="width: 50%;" />
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/bmi-data-availability.png" style="width: 50%;" />
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Comparison%20of%20Valid%20vs%20Corrupted-Unknown%20Data.png" style="width: 70%;" />
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Breakdown%20of%20Corrupted%20Data.png" style="width: 70%;" />
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/bmi-data-availability.png" style="width: 70%;" />
