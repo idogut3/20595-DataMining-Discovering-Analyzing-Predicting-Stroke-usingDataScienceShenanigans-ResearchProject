@@ -54,4 +54,16 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
   - Age - is a continuous numeric variable ( float ) representing the patient's age. The values range from 0.08 years to a maximum age of 82 years, and there are no missing values in this field.
 
 ### A diagram I drew of the age distribution.
-![age-distribution](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/age-distribution.png)
+
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/age-distribution.png" style="width: 50%;" />
+
+
+  - hypertension - is a binary variable where a value of 1 indicates that the patient has hypertension, and -0 indicates that they do not. This attribute contains complete data with no missing values.
+  - disease_heart - is another binary variable where 1 represents the presence of heart disease and -0 represents its absence. Like the previous field, it does not contain missing data.
+  - married_ever - is a categorical variable indicating whether the patient has ever been married. It has two possible values: "yes" and "no", and has no missing values.
+  - type_work - classifies the type of employment of the patient. It can be one of the following: "children", "government job", "never worked", "private", or "self-employed". This field is complete with no missing data.
+  - type_Residence - identifies whether the patient lives in a "rural" or "urban" area. This categorical variable is fully populated.
+  - avg_glucose_level - is a float representing the patient's average blood glucose level. It ranges from 55.12 to 271.74 and contains no missing values. bmi - or body mass index, is a continuous numeric attribute ranging from 10.3 to .97.6. 
+
+However, this field contains 201 missing values, which need to be handled during preprocessing. status_smoking - is a categorical attribute with four possible values: "never smoked", "previously smoked", "smoker", and "unknown". Although it does not contain missing values in the traditional sense, "unknown" is used as a placeholder for data that is not available. stroke - is the target binary variable of the dataset. A value of 1 indicates that the patient has had a stroke, and 0 indicates that he has not. There are no missing values in this field.
+
