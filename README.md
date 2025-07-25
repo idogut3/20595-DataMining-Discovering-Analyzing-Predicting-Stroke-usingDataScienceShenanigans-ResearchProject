@@ -49,5 +49,5 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
   - Gender - is a categorical attribute indicating the patient's gender. It can take one of three values: "male", "female" or "other", with no missing values.
   - Age - is a continuous numeric variable ( float ) representing the patient's age. The values range from 0.08 years to a maximum age of 82 years, and there are no missing values in this field.
 
-A diagram I drew of the age distribution.
-
+## A diagram I drew of the age distribution.
+[age-distribution](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/age-distribution.png)
