@@ -74,8 +74,8 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 > important metric to achieve (since this situation means identifying a person who is going to have a stroke as a person who will not have a stroke, which is a very big risk to their life (false identification).
 
 ### Missing Values:
-  - Bmi values - Approximately 3.9% of records are missing - Which is 201 rows that are missing.
-  - Smoking_status values - a couple of unknown values.
+  - **Bmi values** - Approximately 3.9% of records are missing - Which is 201 rows that are missing.
+  - **Smoking_status values** - a couple of unknown values.
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Comparison%20of%20Valid%20vs%20Corrupted-Unknown%20Data.png" style="width: 80%;" />
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Breakdown%20of%20Corrupted%20Data.png" style="width: 80%;" />
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/bmi-data-availability.png" style="width: 80%;" />
