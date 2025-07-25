@@ -79,3 +79,11 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Comparison%20of%20Valid%20vs%20Corrupted-Unknown%20Data.png" style="width: 80%;" />
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/Breakdown%20of%20Corrupted%20Data.png" style="width: 80%;" />
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images/bmi-data-availability.png" style="width: 80%;" />
+
+### Data balance issues:
+The dataset is unbalanced, which may lead to poor model performance on the minority class. 
+Techniques such as SMOTE are needed to balance the data.
+
+### In the project, I used various techniques, and here are some of them:
+
+
