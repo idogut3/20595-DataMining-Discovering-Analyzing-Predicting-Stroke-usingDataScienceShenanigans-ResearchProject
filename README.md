@@ -10,5 +10,6 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 
 The Link for the dataset I used: [kaggle dataset link](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data).
 
+The project incorporates
 
 
