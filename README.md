@@ -8,19 +8,21 @@ It's goal is to find as many "early signs" for stroke, helping doctors / nurses 
 In a lot of ways its much more of a research project foucusing on the data, diving into medical proven facts and using those facts and known factors to test, verify, and evaluate our models, than a "regular" data-science project
 with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> operate).
 
-> [!TIP]
-> Explanations about the importance of stroke prediction and comparison of different methods can be read in the following articles published in the journal Nature in 2024 at the following addresses:
->
-> [Predictive modelling and identification of key risk factors for stroke using machine learning](https://www.nature.com/articles/s41598-024-61665-4)
-> 
-> [Explainable artificial intelligence for stroke prediction through comparison of deep learning and machine learning models](https://www.nature.com/articles/s41598-024-82931-5)
-
 > [!NOTE]
 > The Link for the dataset I used: [kaggle dataset link](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data).
 
 > [!NOTE]
 > The project incorporates AI/ML/Deep Learning techniques used alongside some statistical analysis based models and label classification methods. 
 > I encourage you to scroll on to dive deeper into the project.
+
+
+
+> [!TIP]
+> Explanations about the importance of stroke prediction and comparison of different methods can be read in the following articles published in the journal Nature in 2024 at the following addresses:
+>
+> [Predictive modelling and identification of key risk factors for stroke using machine learning](https://www.nature.com/articles/s41598-024-61665-4)
+> 
+> [Explainable artificial intelligence for stroke prediction through comparison of deep learning and machine learning models](https://www.nature.com/articles/s41598-024-82931-5)
 
 
 
