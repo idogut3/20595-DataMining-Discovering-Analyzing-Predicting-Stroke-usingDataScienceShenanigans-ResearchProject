@@ -90,7 +90,7 @@ Number of stroke cases (stroke = 1): 249
     The goal at the end of this phase is to derive actionable knowledge from the data that can aid in the early detection or prevention of stroke.
     The results are then visually presented in diagrams and the main findings of the data are presented to support further conclusions and further research.
 
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/KDD-steps-Knowledge-Discovery-in-Databases.png" style="width: 70%;" />
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/KDD-steps-Knowledge-Discovery-in-Databases.png" style="width: 90%;" />
 ---
 
 ### Our dataset:
