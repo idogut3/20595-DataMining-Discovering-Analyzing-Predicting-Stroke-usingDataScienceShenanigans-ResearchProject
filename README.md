@@ -92,7 +92,8 @@ Techniques such as SMOTE are needed to balance the data.
 > when one data class (or many) has/have way fewer examples than the others (like 90% healthy patients, 10% stroke patients), AI / Machine learning / Deep learning models tend to favor the majority class.
 > Specifically in classification tasks (such as this project) we see this "favoritism" very clearly (classification tasks = predicting which category or class an input belongs to, like spam vs not spam or stroke vsno stroke).
 >
-> Why does it happen? 
+> **Why does it happen?**
+>
 > Because when we are training a model we give it rewards & punishments (negative rewards) - by the way this way of training is called reinforcement learning.
 > _When training a model that way,_ it may just predict "healthy" all the time and still be 90% accurate (because 90% of the time we get healthy patients) the model is trained to get as few punishments as it can so it does that.
 > **but that’s useless** if you care about identifying strokes.
