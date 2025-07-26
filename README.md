@@ -45,6 +45,11 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 ### 5. **Generalization and prevention of overfitting:**
   - Goal: To ensure that the model can correctly generalize to unseen patient data.
 
+> [!IMPORTANT]
+> #### Main assumptions and simplifications in the project:
+> Since we are dealing with medical data that relates to predictions of whether or not a patient will have a stroke (a life or death scenario), the main assumption I use throughout the project is that **_reducing_ false negatives** is the most
+> important metric to achieve (since this situation means identifying a person who is going to have a stroke as a person who will not have a stroke, which is a very big risk to their life (false identification).
+
 ---
 
 ### Our dataset:
@@ -67,11 +72,6 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 
   - **status_smoking** - is a categorical attribute with four possible values: "never smoked", "previously smoked", "smoker", and "unknown". Although it does not contain missing values in the traditional sense, "unknown" is used as a placeholder for data that is not available.
   - **stroke** - is the target binary variable of the dataset. A value of 1 indicates that the patient has had a stroke, and 0 indicates that he has not. There are no missing values in this field.
-
-> [!IMPORTANT]
-> #### Main assumptions and simplifications in the project:
-> Since we are dealing with medical data that relates to predictions of whether or not a patient will have a stroke (a life or death scenario), the main assumption I use throughout the project is that **_reducing_ false negatives** is the most
-> important metric to achieve (since this situation means identifying a person who is going to have a stroke as a person who will not have a stroke, which is a very big risk to their life (false identification).
 
 ### Missing Values:
   - **Bmi values** - Approximately 3.9% of records are missing - Which is 201 rows that are missing.
