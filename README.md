@@ -116,7 +116,7 @@ Techniques such as SMOTE are needed to balance the data.
 > _It's very simillar to another ai algorithm that we will talk about later (knn)._
 > 
 > <p align="center">
->  <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/raw/main/images%26gifs/smote_animation.gif" width="300">
+>  <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/raw/main/images%26gifs/smote_animation.gif" width="350">
 > </p>
 
 ### In the project, I used various techniques, and here are some of them:
