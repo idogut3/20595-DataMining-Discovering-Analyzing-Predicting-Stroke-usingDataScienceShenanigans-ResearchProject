@@ -127,15 +127,33 @@ Techniques such as SMOTE are needed to balance the data.
 >> So as always,
 >> **_with great power comes great responsibility ~uncle Ben_** 🕷
 
-### In the project, I used various techniques of dealing with missing or unbalanced data, here are some of them:
+### In the project, I used various techniques of dealing with missing or unbalanced data, moreover we need a more general, proper preprocessing of the data before we can start working on it
+#### here are some of the preprocessing aspects:
+
 #### SMOTE for unbalanced data
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/stroke-class-distribution-before&after-smote.png" style="width: 100%;" />
-#### Median filling
+
+#### Median filling for missing values
 ```python
-
+# Fill missing values in numeric columns
+df['bmi'] = df['bmi'].fillna(df['bmi'].median())
+...
+# Just in case: Fill remaining missing values
+X_train = X_train.fillna(X_train.median(numeric_only=True))
+X_test = X_test.fillna(X_test.median(numeric_only=True))
 ```
-#### Ignoring the problem 😌🙃
-
+#### Ignoring the problem (missing values) 😌🙃
 ```python
-
+# Replace 'Unknown' with NaN in smoking_status
+df['smoking_status'] = df['smoking_status'].replace('Unknown', pd.NA)
+...
 ```
+#### Raw categorical data is not compatible with some of our algorithms, it needs encoding:
+```python
+# Map binary columns
+df['ever_married'] = df['ever_married'].map({'Yes': 1, 'No': 0})
+df['Residence_type'] = df['Residence_type'].map({'Urban': 1, 'Rural': 0})
+...
+df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_first=True)
+```
+
