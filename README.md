@@ -51,6 +51,42 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 > important metric to achieve (since this situation means identifying a person who is going to have a stroke as a person who will not have a stroke, which is a very big risk to their life (false identification).
 
 ---
+## How are we going to achieve those goals?
+### Data preparation steps - Knowledge Discovery in the Database (KDD):
+1. The first step in the KDD process is **SELECTION**, where relevant data is collected and selected for analysis. In this project, we use a medical dataset containing 12 patient-related characteristics, such as age, gender, blood glucose levels, BMI, smoking status, and medical history (including hypertension and heart disease). The main feature we focus on - in analyzing the dataset is the stroke feature, which indicates whether a patient has experienced a stroke or not. This target feature is essential for building predictive models aimed at correctly classifying stroke.
+```
+The beginning of the data: 
+
+      id  gender   age  hypertension  heart_disease ever_married      work_type Residence_type  avg_glucose_level   bmi   smoking_status  stroke
+0   9046    Male  67.0             0              1          Yes        Private          Urban             228.69  36.6  formerly smoked       1
+1  51676  Female  61.0             0              0          Yes  Self-employed          Rural             202.21   NaN     never smoked       1
+2  31112    Male  80.0             0              1          Yes        Private          Rural             105.92  32.5     never smoked       1
+3  60182  Female  49.0             0              0          Yes        Private          Urban             171.23  34.4           smokes       1
+4   1665  Female  79.0             1              0          Yes  Self-employed          Rural             174.12  24.0     never smoked       1
+
+Description of the data table: 
+
+                 id          age  hypertension  heart_disease  avg_glucose_level          bmi       stroke
+count   5110.000000  5110.000000   5110.000000    5110.000000        5110.000000  4909.000000  5110.000000
+mean   36517.829354    43.226614      0.097456       0.054012         106.147677    28.893237     0.048728
+std    21161.721625    22.612647      0.296607       0.226063          45.283560     7.854067     0.215320
+min       67.000000     0.080000      0.000000       0.000000          55.120000    10.300000     0.000000
+25%    17741.250000    25.000000      0.000000       0.000000          77.245000    23.500000     0.000000
+50%    36932.000000    45.000000      0.000000       0.000000          91.885000    28.100000     0.000000
+75%    54682.000000    61.000000      0.000000       0.000000         114.090000    33.100000     0.000000
+max    72940.000000    82.000000      1.000000       1.000000         271.740000    97.600000     1.000000
+
+Stroke Case Summary (in data-set):
+
+Number of stroke-free cases (stroke = 0): 4861
+Number of stroke cases (stroke = 1): 249
+```
+2. After selecting the data, the next step is **PREPROCESSING**. This step involves cleaning and organizing the data to ensure its quality and reliability. In the dataset, we encounter missing values in the BMI column and unavailable information marked as "unknown" in the smoking_status attribute. These issues are addressed using various preprocessing techniques such as filling in missing values using median / value average, data filtering, and handling categorical outliers. In addition, all features are checked for consistency, duplication, and appropriate formatting to prepare the data for further analysis.
+3. The third stage is **TRANSFORMATION**, which involves converting the data into formats suitable for modeling. In this project, numeric characteristics can be normalized or rescaled, and categorical variables - such as gender, job type, and residence type - can be encoded using techniques such as hot one encoding or categorical label encoding. Furthermore, the dataset can be balanced using synthetic techniques such as SMOTE to ensure that the minority group (stroke cases) is equally represented as the majority category (non-stroke), thus improving the effectiveness of AI models.
+4. Then comes the **DATA MINING** stage, where various artificial intelligence and machine learning algorithms are applied to uncover patterns (or different behaviors) and build predictive models. In the stroke prediction task, several models such as Nearest-K Neighbors (KNN), Support Vector Machines (SVM), Logistic Regression can be implemented, I personally chose to use FOREST RANDOM and XGBOOST (and later on a few more models) which is a gradient state based model. The models are trained to classify whether a patient is at risk of stroke. Each model is evaluated based on metrics such as accuracy, precision, 1F score and more... to determine its effectiveness. Cross-validation techniques can also be used to ensure that the results are robust and not biased by splitting the data set.
+5. At last comes the **INTERPRETATION AND EVALUATION** phase evaluates the model results to draw conclusions and insights. This phase includes comparing the model performance, identifying the most influential characteristics that contribute to stroke risk, and interpreting the results in a relevant medical context. The goal at the end of this phase is to derive actionable knowledge from the data that can aid in the early detection or prevention of stroke. The results are then visually presented in diagrams and the main findings of the data are presented to support further conclusions and further research.
+
+---
 
 ### Our dataset:
 
