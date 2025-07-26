@@ -86,12 +86,12 @@ Techniques such as SMOTE are needed to balance the data.
 
 > [!IMPORTANT]
 > #### **What is SMOTE? Why do we need it?**
-> SMOTE stands for Synthetic Minority Over-sampling Technique.
+>  **SMOTE stands for Synthetic Minority Over-sampling Technique.**
 > 
 > It's a way to balance imbalanced datasets which helps increase performance & accuracy (alongside helping precision, recall etc... more on that later);
 > when one data class (or many) has/have way fewer examples than the others (like 90% healthy patients, 10% stroke patients), AI / Machine learning / Deep learning models tend to favor the majority class.
 >
-> Specifically in classification tasks (such as this project) we see this "favoritism" very clearly (classification tasks = predicting which category or class an input belongs to, like spam vs not spam or stroke vs no stroke).
+> **Specifically in classification tasks** (such as this project) we see this "favoritism" very clearly (classification tasks = predicting which category or class an input belongs to, like spam vs not spam or stroke vs no stroke).
 >
 > **Why does it happen?**
 >
@@ -99,9 +99,13 @@ Techniques such as SMOTE are needed to balance the data.
 > _When training a model that way,_ it may just predict "healthy" all the time and still be 90% accurate (because 90% of the time we get healthy patients) the model is trained to get as few punishments as it can so it does that.
 > **but that’s useless** if you care about identifying strokes.
 >
-> Since we are dealing with a greatly imbalanced dataset **_we need to do something about it!_** 
-> There are a couple ways to do that like: duplicating data from the minority class (over-sampling), removing some samples from the majority class (undersampling), adjusting class weights during training to penalize misclassifying, splitting 
-> the data into k balanced subsets (**_k-fold sampling_** - more on that later) and just getting more data overall... **BUT** there is another way which is soooo smart and just brilliant that helps deal with that problem amazingly.
+> Since we are dealing with a greatly imbalanced dataset **_we need to do something about it!_**  
+> There are a couple ways to do that, like:
+>
+> Duplicating data from the minority class (over-sampling), removing some samples from the majority class (undersampling), adjusting class weights during training to penalize misclassifying, splitting 
+> the data into k balanced subsets (**_k-fold sampling_** - more on that later) and just getting more data overall...
+> 
+> **BUT** there is another way which is soooo smart and just brilliant that helps deal with that problem amazingly.
 > Like you probably already guessed it is called SMOTE! SMOTE creates a new, fake-but-realistic examples of the minority class.
 >
 > **How does it do it?**
