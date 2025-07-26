@@ -84,6 +84,18 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 The dataset is unbalanced, which may lead to poor model performance on the minority class. 
 Techniques such as SMOTE are needed to balance the data.
 
+> [!NOTE]
+> ### What is SMOTE? Why do we need it?
+> SMOTE stands for Synthetic Minority Over-sampling Technique.
+> 
+> It's a way to balance imbalanced datasets which helps increase performance & accuracy (alongside helping precision, recall etc... more on that later);
+> when one data class (or many) has/have way fewer examples than the others (like 90% healthy patients, 10% stroke patients).
+> AI / Machine learning / Deep learning models tend to favor the majority class in classification tasks (such as getting data and predicting based on it -> this patient is health and this one is not). 
+> Why does it happen? because when we are training a model we give it rewards or punishments (negative rewards) - this way of training is called reinforcement learning.
+> When training a model that way, it may just predict "healthy" all the time and still be 90% accurate—but that’s useless if you care about catching strokes.
+> Since we are dealing with a greatly imbalanced dataset
+
+
 ### In the project, I used various techniques, and here are some of them:
 
 
