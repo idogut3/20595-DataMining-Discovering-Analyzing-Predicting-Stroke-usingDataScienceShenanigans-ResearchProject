@@ -118,7 +118,7 @@ Techniques such as SMOTE are needed to balance the data.
 > <p align="center">
 >  <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/raw/main/images%26gifs/smote_animation.gif" width="350">
 > </p>
-> #### As you can see blue squares are the majority class while the orange circles are the minority, SMOTE deals with it by generating new synthetic minority samples ^^^
+> As you can see blue squares are the majority class while the orange circles are the minority, SMOTE deals with it by generating new synthetic minority samples.
 
 ### In the project, I used various techniques, and here are some of them:
 
