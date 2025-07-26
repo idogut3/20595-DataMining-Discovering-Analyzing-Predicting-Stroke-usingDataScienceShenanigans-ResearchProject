@@ -121,5 +121,5 @@ Techniques such as SMOTE are needed to balance the data.
 > As you can see blue squares are the majority class while the orange circles are the minority, SMOTE deals with it by generating new synthetic minority samples.
 
 ### In the project, I used various techniques, and here are some of them:
-
+![stroke-class-distribution-before&after-smote](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/stroke-class-distribution-before&after-smote.png)
 
