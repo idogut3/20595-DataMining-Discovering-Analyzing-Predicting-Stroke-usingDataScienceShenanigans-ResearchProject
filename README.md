@@ -114,7 +114,10 @@ Techniques such as SMOTE are needed to balance the data.
 > 3. It Picks one neighbor at random.
 > 4. &Generates a new sample somewhere in between the two samples (interpolation).
 > _It's very simillar to another ai algorithm that we will talk about later (knn)._
-> <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/raw/main/images%26gifs/smote_animation.gif" alt="demo gif" style="width: 80%;"
+> 
+> <p align="center">
+>  <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/raw/main/images%26gifs/smote_animation.gif" width="400">
+> </p>
 
 ### In the project, I used various techniques, and here are some of them:
 
