@@ -94,7 +94,7 @@ Number of stroke cases (stroke = 1): 249
 
 ---
 
-### Our dataset:
+## Our dataset:
 
   - **Id** - is a unique integer identifier assigned to each patient. It ranges from 67 to 72,940 and does not contain missing values.
   - **Gender** - is a categorical attribute indicating the patient's gender. It can take one of three values: "male", "female" or "other", with no missing values.
@@ -120,7 +120,7 @@ Number of stroke cases (stroke = 1): 249
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/Breakdown%20of%20Corrupted%20Data.png" style="width: 60%;" />
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/bmi-data-availability.png" style="width: 60%;" />
 
-## Data balance issues:
+### Data balance issues:
 The dataset is unbalanced, which may lead to poor model performance on the minority class. 
 Techniques such as SMOTE are needed to balance the data.
 
