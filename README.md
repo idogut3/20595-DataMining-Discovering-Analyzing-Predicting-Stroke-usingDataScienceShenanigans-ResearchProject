@@ -125,10 +125,17 @@ Techniques such as SMOTE are needed to balance the data.
 > Generating too many synthetic samples can make the model overfit to the artificial data and miss real-world variation. It can also blur class boundaries and reduce model performance if used without care.
 >
 >> So as always,
->> **_with great power comes great responsibility ~uncle Ben_**
+>> **_with great power comes great responsibility ~uncle Ben_** 🕷
 
-### In the project, I used various techniques, and here are some of them:
-#### SMOTE
+### In the project, I used various techniques of dealing with missing or unbalanced data, here are some of them:
+#### SMOTE for unbalanced data
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/stroke-class-distribution-before&after-smote.png" style="width: 100%;" />
+#### Median filling
+```python
 
+```
+#### Ignoring the problem 😌🙃
 
+```python
+
+```
