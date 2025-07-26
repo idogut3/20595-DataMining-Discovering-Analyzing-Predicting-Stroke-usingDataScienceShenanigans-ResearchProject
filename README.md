@@ -96,12 +96,12 @@ Techniques such as SMOTE are needed to balance the data.
 > Because when we are training a model we give it rewards & punishments (negative rewards) - by the way this way of training is called reinforcement learning.
 > _When training a model that way,_ it may just predict "healthy" all the time and still be 90% accurate (because 90% of the time we get healthy patients) the model is trained to get as few punishments as it can so it does that.
 > **but that’s useless** if you care about identifying strokes.
-
+>
 > Since we are dealing with a greatly imbalanced dataset we need to do something about it! 
 > There are a couple ways to do that like: duplicating data from the minority class (over-sampling), removing some samples from the majority class (undersampling), adjusting class weights during training to penalize misclassifying, splitting 
 > the data into k balanced subsets (**_k-fold sampling_** - more on that later) and just getting more data overall... **BUT** there is another way which is soooo smart and just brilliant that helps deal with that problem amazingly.
 > Like you probably already guessed it is called SMOTE! SMOTE creates a new, fake-but-realistic examples of the minority class.
-
+>
 > **How does it do it?**
 > 1. It takes a minority sample (e.g. a stroke case).
 > 2. It finds it's nearest neighbors in the minority class.
