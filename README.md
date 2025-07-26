@@ -111,7 +111,7 @@ Number of stroke cases (stroke = 1): 249
     
 #### A diagram I drew of the age distribution.
 
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/age-distribution.png" style="width: 60%;" />
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/age-distribution.png" style="width: 55%;" />
 
 ### Missing Values:
   - **Bmi values** - Approximately 3.9% of records are missing - Which is 201 rows that are missing.
