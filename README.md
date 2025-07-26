@@ -120,6 +120,15 @@ Techniques such as SMOTE are needed to balance the data.
 > </p>
 > As you can see blue squares are the majority class while the orange circles are the minority, SMOTE deals with it by generating new synthetic minority samples.
 
+> [!CAUTION]
+> Using SMOTE too much is **bad**,
+> Generating too many synthetic samples can make the model overfit to the artificial data and miss real-world variation. It can also blur class boundaries and reduce model performance if used without care.
+>
+>> So as always,
+>> **_with great power comes great responsibility ~uncle Ben_**
+
 ### In the project, I used various techniques, and here are some of them:
-![stroke-class-distribution-before&after-smote](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/stroke-class-distribution-before&after-smote.png)
+#### SMOTE
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-using-DataMining-ResearchProject/blob/main/images&gifs/stroke-class-distribution-before&after-smote.png" style="width: 100%;" />
+
 
