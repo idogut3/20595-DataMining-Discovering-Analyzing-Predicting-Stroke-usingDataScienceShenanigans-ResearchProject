@@ -52,7 +52,7 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 
 ---
 ## How are we going to achieve those goals?
-### Data preparation steps - Knowledge Discovery in the Database (KDD):
+### Knowledge Discovery in the Database (KDD):
 1. The first step in the KDD process is **SELECTION**, where relevant data is collected and selected for analysis. In this project, we use a medical dataset containing 12 patient-related characteristics, such as age, gender, blood glucose levels, BMI, smoking status, and medical history (including hypertension and heart disease). The main feature we focus on - in analyzing the dataset is the stroke feature, which indicates whether a patient has experienced a stroke or not. This target feature is essential for building predictive models aimed at correctly classifying stroke.
 ```
 The beginning of the data: 
