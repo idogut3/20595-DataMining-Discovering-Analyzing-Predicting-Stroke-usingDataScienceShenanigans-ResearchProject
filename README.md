@@ -258,7 +258,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
     #### Disadvantages:
   - Their main disadvantage is their interpretability - while the importance of features can be extracted, the model itself functions as a black box, which is a significant disadvantage if we want to know the trends and problematic                 features ourselves, especially in this medical application.
 <p align="center">
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Random%20Forest%20gif.gif" width="400">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Random%20Forest%20gif.gif" width="500">
 </p>
 
 ### Summary
