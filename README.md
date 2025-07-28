@@ -217,6 +217,10 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
   - It's coefficients provide clear insights into the strength of the relationships between risk factors for stroke. However, Logistic Regression assumes a linear relationship between characteristics and the logistic odds, which may fail to        identify complex, non-linear data in the dataset.
   - This limitation can limit the predictive power of the method, especially when the relationship between characteristics and stroke is nonlinear. Absolutely.
 
+<p align="center">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/LogisticRegressionGif.gif" width="250">
+</p>
+
 ### KNN (K Nearest Neighbors)
 2. **KNN (K Nearest Neighbors)** is a non-parametric method that classifies instances based on the majority label of the nearest neighbors in the feature space. In other words, it classifies the object according to the majority category of its K closest neighbors.
 - It is easy to implement and makes no assumptions about the underlying data distribution, which is useful for datasets with complex patterns.
@@ -226,6 +230,10 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
   
   #### Disadvantages:
 - KNN is very computationally expensive (especially when the data has high dimensionality) with the computational cost increasing exponentially for each additional dimension during prediction, since it requires calculating distances from all     training samples.
+
+<p align="center">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/KNNgif.gif" width="250">
+</p>
 
 ### SVM (Support Vector Machines)
 3. **SVM (Support Vector Machines)** is a good model for classifying points even in high-dimensional spaces,
@@ -237,6 +245,10 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
   - They can be sensitive to the choice of hyperparameters and kernel functions, and often require extensive tuning.
   - SVMs are less interpretable (i.e., require a deep understanding of the features) than logistic regression and can be computationally expensive for large datasets.
 
+<p align="center">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/SVMgif.gif" width="250">
+</p>
+
 ### Random forests
 4. **Random forests** are learning and prediction methods that build multiple decision trees and pool their predictions.
   - The models are known for being noise-resistant, and able to handle missing data relatively well.
@@ -245,6 +257,9 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 
     #### Disadvantages:
   - Their main disadvantage is their interpretability - while the importance of features can be extracted, the model itself functions as a black box, which is a significant disadvantage if we want to know the trends and problematic                 features ourselves, especially in this medical application.
+<p align="center">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Random%20Forest%20gif.gif" width="250">
+</p>
 
 ### Summary
   In summary, each method offers unique advantages and disadvantages. Logistic regression is the easiest to interpret, KNN offers simplicity of the model itself but can be computationally expensive, especially with large data and will be         sensitive to imbalances, SVM provides strong performance with careful tuning but can be computationally expensive when dealing with a lot of data. And random forests balance their accuracy at the expense of unclear interpretation.
