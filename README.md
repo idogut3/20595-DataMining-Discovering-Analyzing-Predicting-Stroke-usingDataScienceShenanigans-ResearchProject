@@ -343,8 +343,10 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 > [!IMPORTANT]
 > ### What is Association rule learning?
 > Association rule learning is a way for computers to find interesting relationships or patterns in large sets of data.
+> 
 > Imagine you're looking at customer shopping habits in a supermarket.
 > If the data shows that people who buy bread often also buy butter, the computer can learn that pattern and create a rule like: "If someone buys bread, they’re likely to buy butter too."
+> 
 > These rules help businesses make better decisions, like placing related items close together or suggesting products online.
 > In the context of stroke prediction it is helpful for us to uncover the association rules that lead to stroke to gain useful insight into the factors which lead up to stroke.
 
