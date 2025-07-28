@@ -330,7 +330,7 @@ I think that in general it would help if we combined 2 different models that wou
 
 - **Explanation tool:** It may be a good idea to use tools like SHAP or LIME to interpret the model predictions. In medical applications like this project, understanding why a model predicts stroke is sometimes as important as the prediction itself to help identify more cases in the future.
 
-#### In terms of inferences on the data:**
+#### In terms of inferences on the data:
 XGBoost may be better suited to this medical scenario because its recall is higher, which ensures that fewer strokes are missed. In healthcare, false negatives (missing strokes) are often more dangerous than false positives.
 
 Random Forest, with slightly better accuracy and precision, may be suitable in environments where "false alarms" are costly (e.g. limited resources for follow-up testing).
