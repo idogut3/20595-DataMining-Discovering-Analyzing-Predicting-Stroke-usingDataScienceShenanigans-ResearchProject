@@ -273,6 +273,14 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 
 ## Results
 ### XGBoost:
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrix.png" width="400">
+
+
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixThreshold-0.4.png" width="400">
+
+
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixBestThreshold-0.03.png" width="400">
+
 ![XGBoostConfusionMatrix](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrix.png)
 ![XGBoostConfusionMatrix-Threshold-0.4](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixThreshold-0.4.png)
 ![XGBoostConfusionMatrix-BestThreshold-0.03](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixBestThreshold-0.03.png)
