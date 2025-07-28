@@ -303,8 +303,7 @@ In general, the model's results are quite good. Considering all the data, it doe
 ### RANDOM FOREST – Results Analysis:
 The RANDOM FOREST model, with a threshold of 0.26, gives a slightly better overall accuracy of 78.7%, and a slightly higher F1 score (0.21) compared to XGBoost. 
 - The accuracy is only slightly higher (12.9%), and the recall is lower than XGBoost (58%), which means that it detects fewer strokes but is more confident in its predictions when it does detect.
-  
-Like XGBoost, the model performs well in non-stroke cases because the recall is lower for strokes compared to XGBoost. The model may be less superior if capturing as many strokes as possible is the priority.
+- Like XGBoost, the model performs well in non-stroke cases because the recall is lower for strokes compared to XGBoost. The model may be less superior if capturing as many strokes as possible is the priority.
 
 Like the previous model, the results are quite good, considering all the data it does meet the problem tasks and reduces the number of false negatives. The model performs better in terms of identifying a person who does not have a disease (fewer such cases compared to the previous model) but is a little more sensitive to false positive diagnosis problems. However, there are significant improvements that can be made to the model, and I will detail them in later sections.
 
