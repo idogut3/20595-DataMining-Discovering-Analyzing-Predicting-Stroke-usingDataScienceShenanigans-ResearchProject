@@ -218,7 +218,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
   - This limitation can limit the predictive power of the method, especially when the relationship between characteristics and stroke is nonlinear. Absolutely.
 
 <p align="center">
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/LogisticRegressionGif.gif" width="400">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/LogisticRegressionGif.gif" width="450">
 </p>
 
 ### KNN (K Nearest Neighbors)
