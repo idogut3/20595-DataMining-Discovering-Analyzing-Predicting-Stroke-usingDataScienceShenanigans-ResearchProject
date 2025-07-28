@@ -203,3 +203,35 @@ df['Residence_type'] = df['Residence_type'].map({'Urban': 1, 'Rural': 0})
 df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_first=True)
 ```
 
+---
+
+## A comparative review of different AI models for performing data mining
+
+- In our task, the main goal is stroke prediction using the given medical dataset, and data mining techniques that can draw new conclusions and distinguish different patterns. Several DATA MINING techniques can be applied to achieve              significant results. 
+- Each approach has its own advantages but disadvantages, and the choice of algorithm can significantly affect performance.
+- Here is the comparison I made between 4 well-known data mining prediction models with their advantages and disadvantages:
+
+1. **Logistic Regression** is a statistical model that is used mainly in binary classification problems (such as stroke prediction 0 – no stroke, 1 has a stroke/will have).
+  - The method is simple, fast and easy to interpret, which gives us the ability to understand the impact of each characteristic on the likelihood of stroke.
+  - It's coefficients provide clear insights into the strength of the relationships between risk factors for stroke. However, Logistic Regression assumes a linear relationship between characteristics and the logistic odds, which may fail to        identify complex, non-linear data in the dataset.
+  -  This limitation can limit the predictive power of the method, especially when the relationship between characteristics and stroke is nonlinear. Absolutely.
+
+KNN (K Nearest Neighbors) is a non-parametric method that classifies instances based on the majority label of the nearest neighbors in the feature space. In other words, it classifies the object according to the majority category of its K closest neighbors.
+KNN is easy to implement and makes no assumptions about the underlying data distribution, which is useful for datasets with complex patterns. However, it can be sensitive to irrelevant or graded features, and its performance tends to deteriorate with high-dimensional data. In addition, KNN is very computationally expensive (especially when the data has high dimensionality) with the computational cost increasing exponentially for each additional dimension during prediction, since it requires calculating distances from all training samples.
+SVM (Support Vector Machines) is a good model for classifying points even in high-dimensional spaces, in addition to They have the ability to model nonlinear decision boundaries using kernel functions. SVMs are particularly effective for datasets where classes are separable and the gap between them is important. In the context of prediction, SVMs can help address the problem of class imbalance through the use of class weights. However, they can be sensitive to the choice of hyperparameters and kernel functions, and often require extensive tuning. In addition, SVMs are less interpretable (i.e., require a deep understanding of the features) than logistic regression and can be computationally expensive for large datasets. Random forests are learning and prediction methods that build multiple decision trees and pool their predictions. The models are known for being noise-resistant, and able to handle missing data relatively well, they can model complex predictions without overfitting, such as Single decision trees. Random forests are very effective for this type of health data (in this project) because they can handle mixed types of variables and are less sensitive to data imbalance when used with appropriate techniques. However, their main disadvantage is their interpretability - while the importance of features can be extracted, the model itself functions as a black box, which is a significant disadvantage if we want to know the trends and problematic features ourselves, especially in this medical application. In summary, each method offers unique advantages and disadvantages. Logistic regression is the easiest to interpret, KNN offers simplicity of the model itself but can be computationally expensive, especially with large data and will be sensitive to imbalances, SVM provides strong performance with careful tuning but can be computationally expensive when dealing with a lot of data. And random forests balance their accuracy at the expense of unclear interpretation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
