@@ -307,7 +307,33 @@ The RANDOM FOREST model, with a threshold of 0.26, gives a slightly better overa
 
 Like the previous model, the results are quite good, considering all the data it does meet the problem tasks and reduces the number of false negatives. The model performs better in terms of identifying a person who does not have a disease (fewer such cases compared to the previous model) but is a little more sensitive to false positive diagnosis problems. However, there are significant improvements that can be made to the model, and I will detail them in later sections.
 
+### Suggestions for improvements and final comparisons:
 
+In terms of my suggestions for improving the model, I think one of the most significant would be to assign a different "penalty", for each wrong identification.
+As the models (both) operate, I saw that there were a lot of false positives, with a higher penalty for such errors we could probably reduce the amount of these errors, but there is a significant need to keep the amount of false negatives as low as possible (since false postivies are dangerous and valuable to identify early to save lives even).
+
+
+I think that in general it would help if we combined 2 different models that would run one after the other (and maybe even other types of models), one that would be a more "heavy filter" of the information, and would be able to robustly filter out false positives and then run a more "sensitive" model for qualitative clarification / a second test on the information so that we could keep the amount of false negatives very low but we wouldn't have to run too many "unnecessary" tests for a large number of people and thus we could find the "balance".
+- This method would be similar to Ensemble learning (more on this later).
+
+- In addition, I think it is possible to use, for example, XGBoost with the method of
+  K-Fold Cross-Validation. To split the information into K equal samples that will be used for both the control and test groups.
+
+#### Other suggestions for improvement include:
+- **Fine tuning:** Continue experiments with different classification thresholds (thresholds). In this case, a low threshold (0.03 for XGBoost) yielded quite good Recall and this is a promising direction.
+
+- **Advanced sampling techniques:** Beyond SMOTE, consider using SMOTE- (ENN undersampling) ENN or ADASYN, which combine oversampling with cleaning of noisy or ambiguous samples.
+
+- **Ensemble learning models:** Combine predictions from XGBoost and Random Forest in a voting or stacking ensemble to extract the benefits of both recall and precision.
+
+- **Integrate existing and known medical knowledge:** You can always consult and use clinical guidelines or expert knowledge (a doctor / research or clinical doctor) to create more reliable models that rely on solid and known science.
+
+- **Explanation tool:** It may be a good idea to use tools like SHAP or LIME to interpret the model predictions. In medical applications like this project, understanding why a model predicts stroke is sometimes as important as the prediction itself to help identify more cases in the future.
+
+#### In terms of inferences on the data:**
+XGBoost may be better suited to this medical scenario because its recall is higher, which ensures that fewer strokes are missed. In healthcare, false negatives (missing strokes) are often more dangerous than false positives.
+
+Random Forest, with slightly better accuracy and precision, may be suitable in environments where "false alarms" are costly (e.g. limited resources for follow-up testing).
 
 
 
