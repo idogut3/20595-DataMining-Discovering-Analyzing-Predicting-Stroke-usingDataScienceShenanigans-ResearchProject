@@ -227,8 +227,6 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 
 #### Disadvantages:
 - It can be sensitive to irrelevant or graded features, and it's performance tends to deteriorate with high-dimensional data.
-  
-  #### Disadvantages:
 - KNN is very computationally expensive (especially when the data has high dimensionality) with the computational cost increasing exponentially for each additional dimension during prediction, since it requires calculating distances from all     training samples.
 
 <p align="center">
