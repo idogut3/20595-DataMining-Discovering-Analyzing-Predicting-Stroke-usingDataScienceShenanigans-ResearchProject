@@ -276,20 +276,24 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrix.png" width="400">
 
 
+#### XGBoostConfusionMatrix-Threshold-0.4
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixThreshold-0.4.png" width="400">
 
 
+#### XGBoostConfusionMatrix-BestThreshold-0.03
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixBestThreshold-0.03.png" width="400">
-
-![XGBoostConfusionMatrix](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrix.png)
-![XGBoostConfusionMatrix-Threshold-0.4](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixThreshold-0.4.png)
-![XGBoostConfusionMatrix-BestThreshold-0.03](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixBestThreshold-0.03.png)
 
 
 ### RandomForest:
-![RandomForestConfusionMatrix](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/RandomForest-ConfusionMatrix.png)
-![RandomForestConfusionMatrix-Threshold-0.4](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/RandomForest-ConfusionMatrixThreshold-0.4.png)
-![RandomForestConfusionMatrix-BestThreshold-0.26](https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/RandomForest-ConfusionMatrixBestThreshold-0.26.png)
+
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/RandomForest-ConfusionMatrix.png" width="400">
+
+#### RandomForestConfusionMatrix-Threshold-0.4
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/RandomForest-ConfusionMatrixThreshold-0.4.png" width="400">
+
+#### RandomForestConfusionMatrix-BestThreshold-0.26
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/RandomForest-ConfusionMatrixBestThreshold-0.26.png" width="400">
+
 
 
 
