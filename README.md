@@ -348,6 +348,7 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 > If the data shows that people who buy bread often also buy butter, the computer can learn that pattern and create a rule like: "If someone buys bread, they’re likely to buy butter too."
 > 
 > **These rules help businesses make better decisions**, like placing related items close together or suggesting products online.
+> 
 > **_In the context of stroke prediction_** it is helpful for us to uncover the association rules that lead to stroke to gain useful insight into the factors which lead up to stroke.
 
 I chose the **FP-Growth algorithm** to do such task. This algorithm is a popular method used to discover patterns and associations in large datasets.
