@@ -353,11 +353,17 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 
 I chose the **FP-Growth algorithm** to do such task. This algorithm is a popular method used to discover patterns and associations in large datasets.
 
-#### how it works? why is it efficient?
-  Instead of testing every possible combination of features in the data (which is slow and wasteful for large datasets), FP-Growth works by building a special data structure called an “FP tree” that compresses the data and allows the algorithm   to quickly find groups of items that frequently appear together.
+> [!NOTE]
+> #### how it works? why is it efficient?
+> Instead of testing every possible combination of features in the data (which is slow and wasteful for large datasets), FP-Growth works by building a special data structure called an “FP tree” that compresses the data and allows the algorithm > to quickly find groups of items that frequently appear together.
+> 
+> Other algorithms, such as the Pope algorithm, are less computationally expensive/unsuitable for our data because they repeatedly scan the dataset and generate a large number of of candidate combinations, which can be very slow. In contrast, > FP-Growth avoids this by using a special data structure of a “compact” tree, which makes it fast and scalable and helps it find meaningful relationships in our stroke prediction dataset efficiently.
 
-FP-Growth is useful because it can uncover hidden associations between patient characteristics—such as age, job type, or smoking status—and the likelihood of having a stroke. Such insights can be valuable for understanding risk factors, guiding medical decisions about a patient, or conducting medical research.
-Other algorithms, such as the Pope algorithm, are less computationally expensive/unsuitable for our data because they repeatedly scan the dataset and generate a large number of of candidate combinations, which can be very slow. In contrast, FP-Growth avoids this by using a special data structure of a “compact” tree, which makes it fast and scalable and helps it find meaningful relationships in our stroke prediction dataset efficiently.
+> [!NOTE]
+> #### Why is FP-Growth useful in our case?
+> FP-Growth is useful because it can uncover hidden associations between patient characteristics—such as age, job type, or smoking status—and the likelihood of having a stroke.
+> Such insights can be valuable for understanding risk factors, guiding medical decisions about a patient, or conducting medical research.
+
 Before running FP-Growth, I had to balance the Data:
 Since stroke cases are rare in the original dataset, most of the patterns the algorithm would find would only reflect the majority who did not have a stroke. To fix this, I split the Data into 2 groups, a “stroke” group and a “non-stroke” group.
 From the large group (Majority class) – which did not have a stroke, I randomly took a number equal to the group size of the small group that did have a stroke (Minority class),
