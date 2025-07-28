@@ -342,6 +342,7 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 <p align="center">
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/association-rule-learning-visual-example.png" width="450">
 </p>
+
 > [!IMPORTANT]
 > ### What is Association rule learning?
 > Association rule learning is a way for computers to find interesting relationships or patterns in large sets of data.
@@ -353,9 +354,11 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 > 
 > **_In the context of stroke prediction_** it is helpful for us to uncover the association rules that lead to stroke to gain useful insight into the factors which lead up to stroke.
 
+
 <p align="center">
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Association%20rule%20mining%20applications.png" width="500">
 </p>
+
 
 #### _I chose the **FP-Growth algorithm** to do such task. This algorithm is a popular method used to discover patterns and associations in large datasets._
 
