@@ -283,6 +283,12 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 #### XGBoostConfusionMatrix-BestThreshold-0.03
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGBoost-ConfusionMatrixBestThreshold-0.03.png" width="400">
 
+### XGBoost – Results Analysis:
+When using XGBoost with a threshold of 0.03, the model achieves an Accuracy of about 75%, which means that it correctly predicts stroke or non-stroke in 3 out of 4 cases.
+- While Precision is relatively low (around ~12.3%), Recall is quite high at 66%, which means that the model is good at identifying true stroke cases.
+- The F1 score – which is the balance relationship between Accuracy and Recall – is around 0.21, indicating that although the model detects many positive cases (stroke), it also misclassifies a significant (quite large) number of non-stroke cases as stroke.
+
+In general, the model's results are quite good. Considering all the data, it does meet the task of the problem and reduces the amount of false negatives, which is a very, very significant indicator in medical problems (where a person is identified as not going to have a stroke and he actually will have a stroke). It has problems identifying a person who is not sick with a disease, but as an initial test and an indication measure, you can be "calm" if you are diagnosed as not sick with the help of the model, and if so, reduce the number of additional tests that are not necessary for people. Therefore, I would say that it meets its goal. However, there are significant improvements that can be made to the model, and I will detail them in later sections.
 
 ### RandomForest:
 
@@ -294,7 +300,13 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 #### RandomForestConfusionMatrix-BestThreshold-0.26
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/RandomForest-ConfusionMatrixBestThreshold-0.26.png" width="400">
 
+### RANDOM FOREST – Results Analysis:
+The RANDOM FOREST model, with a threshold of 0.26, gives a slightly better overall accuracy of 78.7%, and a slightly higher F1 score (0.21) compared to XGBoost. 
+- The accuracy is only slightly higher (12.9%), and the recall is lower than XGBoost (58%), which means that it detects fewer strokes but is more confident in its predictions when it does detect.
+  
+Like XGBoost, the model performs well in non-stroke cases because the recall is lower for strokes compared to XGBoost. The model may be less superior if capturing as many strokes as possible is the priority.
 
+Like the previous model, the results are quite good, considering all the data it does meet the problem tasks and reduces the number of false negatives. The model performs better in terms of identifying a person who does not have a disease (fewer such cases compared to the previous model) but is a little more sensitive to false positive diagnosis problems. However, there are significant improvements that can be made to the model, and I will detail them in later sections.
 
 
 
