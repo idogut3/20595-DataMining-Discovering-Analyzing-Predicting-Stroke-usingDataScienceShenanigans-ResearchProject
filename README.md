@@ -247,7 +247,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/SVMgif.gif" width="400">
 </p>
 
-### Random forests
+### Random forests & XGBoost
 4. **Random forests** are learning and prediction methods that build multiple decision trees and pool their predictions.
   - The models are known for being noise-resistant, and able to handle missing data relatively well.
   - They can model complex predictions without overfitting, such as Single decision trees.
@@ -255,8 +255,15 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 
     #### Disadvantages:
   - Their main disadvantage is their interpretability - while the importance of features can be extracted, the model itself functions as a black box, which is a significant disadvantage if we want to know the trends and problematic                 features ourselves, especially in this medical application.
+
+#### XGBoost (Extreme Gradient Boosting)
+- **XGBoost (Extreme Gradient Boosting)** builds decision trees sequentially, where each tree tries to fix the errors made by the previous ones. It minimizes a loss function (like log loss or mean
+  squared error) and includes regularization to avoid overfitting. It's known for its speed and performance
+
 <p align="center">
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Random%20Forest%20gif.gif" width="500">
+<br/>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/XGboostgif.gif" width="500">
 </p>
 
 ### Summary
