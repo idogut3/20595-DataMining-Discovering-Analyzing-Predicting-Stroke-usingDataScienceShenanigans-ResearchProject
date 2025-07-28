@@ -218,7 +218,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
   - This limitation can limit the predictive power of the method, especially when the relationship between characteristics and stroke is nonlinear. Absolutely.
 
 <p align="center">
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/LogisticRegressionGif.gif" width="250">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/LogisticRegressionGif.gif" width="350">
 </p>
 
 ### KNN (K Nearest Neighbors)
@@ -232,7 +232,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 - KNN is very computationally expensive (especially when the data has high dimensionality) with the computational cost increasing exponentially for each additional dimension during prediction, since it requires calculating distances from all     training samples.
 
 <p align="center">
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/KNNgif.gif" width="250">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/KNNgif.gif" width="350">
 </p>
 
 ### SVM (Support Vector Machines)
@@ -246,7 +246,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
   - SVMs are less interpretable (i.e., require a deep understanding of the features) than logistic regression and can be computationally expensive for large datasets.
 
 <p align="center">
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/SVMgif.gif" width="250">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/SVMgif.gif" width="350">
 </p>
 
 ### Random forests
@@ -258,7 +258,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
     #### Disadvantages:
   - Their main disadvantage is their interpretability - while the importance of features can be extracted, the model itself functions as a black box, which is a significant disadvantage if we want to know the trends and problematic                 features ourselves, especially in this medical application.
 <p align="center">
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Random%20Forest%20gif.gif" width="250">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Random%20Forest%20gif.gif" width="350">
 </p>
 
 ### Summary
