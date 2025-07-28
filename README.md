@@ -339,9 +339,6 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 ---
 
 ## Association rule learning:
-<p align="center">
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/association-rule-learning-visual-example.png" width="450">
-</p>
 
 > [!IMPORTANT]
 > ### What is Association rule learning?
@@ -356,6 +353,10 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 
 
 <p align="center">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/association-rule-learning-visual-example.png" width="450">
+
+<br/>
+
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Association%20rule%20mining%20applications.png" width="500">
 </p>
 
