@@ -262,7 +262,7 @@ df = pd.get_dummies(df, columns=['gender', 'work_type', 'smoking_status'], drop_
 ### Summary
   In summary, each method offers unique advantages and disadvantages. Logistic regression is the easiest to interpret, KNN offers simplicity of the model itself but can be computationally expensive, especially with large data and will be         sensitive to imbalances, SVM provides strong performance with careful tuning but can be computationally expensive when dealing with a lot of data. And random forests balance their accuracy at the expense of unclear interpretation.
 
-
+--- 
 
 
 
