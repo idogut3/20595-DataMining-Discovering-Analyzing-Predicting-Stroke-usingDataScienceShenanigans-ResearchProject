@@ -864,3 +864,40 @@ Even trying to include different scales to test the quality of the clusters, but
 
 However, we were able to achieve quite impressive results regarding medical insights from clustering into different clusters, but since the clusters overlap quite a bit, I would consider adding more data to the study that are essentially different from all the other clusters (for example, healthy adults and elderly people and people who are underweight/normal weight). And I would consider turning to other models (statisticians or AI, ML, Deep Learning).
 
+---
+
+## Deep learning nerual networks
+
+### I wanted to see how the deep nerual network model would work against this dataset soooo...
+
+### Explanation on the network architecture:
+**My network architecture was determined dynamically (we will detail it later here):**
+
+This is a fully connected neural network, meaning that each neuron in a layer is connected to all neurons in the next layer, with information flowing in one direction (Feedforward network) - from the input layer, through one or more hidden layers, and to the final output. (At the end of the explanation we will say what the final parameters that were chosen are).
+The network starts with an input layer that receives the features (columns) of the data set. Each feature enters its own input neuron.
+The data is then passed through 1 to 3 hidden layers (the exact number is automatically selected by the hyperparameter mechanism that I implemented - we will see later what the number was chosen).
+
+In each hidden layer, the network takes a weighted sum of the inputs, adds a bias, and applies a transformation (i.e., activates the activation function – I chose to use ReLU) before passing it forward.
+Finally, the data reaches the output layer, which has only one neuron – this neuron gives a number between 0 and 1, representing the probability of a stroke.
+
+What are the parameters I am trying to dynamically optimize during the learning process?
+- The number of hidden layers (between 1 and 3).
+- The number of neurons (also called "units") in each hidden layer – between 32 and 128 per layer.
+- The optimizer used to update weights during training (Adam, RMSprop, or SGD).
+- The learning rate (lr – learning rate), which controls the speed of the model's update while it is learning (how much each gradient calculation affects).
+
+Further explanation about the activation function:
+Within each hidden layer, the network uses the ReLU activation function and in the input layer I use the Sigmoid function.
+
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Sigmoid%26Relu.png" width="550">
+</p>
+
+#### On the right is ReLU, on the left is sigmoid.
+- Both are well-known activation functions that turn the final result into a number between 0 and 1.
+  Therefore, they are suitable for binary classification, in our case predicting whether someone has had a stroke is a question of yes or no (1 or 0 - respectively).
+
+- In ReLU, its advantage is that neurons will "fire" only if the input is positive, which helps the network learn complex patterns efficiently - the neurons actually fire only if they are "necessary" in the calculation, and do not remove "small weights" from             calculations that are not needed - which increases the difficulty of the calculation.
+
+- Sigmoid The goal in the end is to estimate our "chance" of having a stroke in the end on a scale between 0 and 1 so that we can calculate the probability of a stroke as the model estimates it and give a percentage of the model's confidence.
+
