@@ -516,7 +516,7 @@ This is a pretty strong and interpretable relationship, especially in healthcare
 ## Predicting using Clustering, AI models
 
 ### Our clustring model:
-I chose to use k-means clustering approach. It is a fairly simple method to implement and our database is not "particularly large" (about 5000 records) and so despite the algorithm's inefficiency it is good enough for now. 
+I chose to use **_k-means clustering_** approach. It is a fairly simple method to implement and our database is not "particularly large" (about 5000 records) and so despite the algorithm's inefficiency it is good enough for now. 
 
 > [!NOTE]
 > Later on I used another clustering algorithm to hopefully get better results, so keep scrolling to see the **Agglomerative Clustering approach**.
@@ -548,5 +548,20 @@ I chose to use k-means clustering approach. It is a fairly simple method to impl
 > </p>
 
 
+### Clustering quality metrics:
+
+There are several clustering quality metrics that are suitable for our problem, here are a few:
+
+#### 1. Silhouette Score:
+One of the most popular ways to check whether clustering makes sense. The metric measures how close each data point is to its assigned cluster, compared to other clusters. Values closer to 1 indicate that the sample is well-matched to its cluster and poorly-matched to other clusters - which is exactly what we want.
+
+#### 2. Calisinski-Harabaz Score:
+This metric measures how "dense" each cluster is and how "far apart" the clusters are. A high score means that internally consistent groups (e.g., similar age, glucose level, BMI, etc.) have been found and are well separated from each other. This helps to assess whether clusters may represent true stroke risk patterns.
+
+#### 3. Davies-Bouldin Index:
+This is an internal evaluation index, where the validation of the clustering performance is done using quantities and features inherent in the dataset. A disadvantage of this is that a good value reported by this method does not imply the best information retrieval.
+These indices give a clear picture of whether the clustering results may be useful for identifying patterns related to stroke.
+
+#### We used **_Silhouette Score_**. 
 
 
