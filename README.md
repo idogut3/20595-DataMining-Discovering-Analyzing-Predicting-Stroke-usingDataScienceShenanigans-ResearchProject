@@ -976,6 +976,60 @@ The model prefers to catch as many strokes as possible - a kind of compromise, e
 
 #### The model is promising in terms of recall (it almost never misses real strokes), but its accuracy is too low to be used on its own for diagnosis. It could be useful as an early warning tool, but would need support from additional tests or a review Experts.
 
+---
+
+
+## Final summary on all of the project
+
+- We reviewed various methods for predicting/predicting/and statistical analyses of the chance of stroke:
+
+In the framework of the work, we investigated the subject of stroke using a multi-stage approach that combines data mining techniques, machine learning, and model optimization.
+
+The data were analyzed from an existing database (Kaggle Stroke Prediction Dataset), with the main goal being to identify patterns, characterize risk groups, and finally predict future stroke cases as accurately as possible – to support future clinical decisions.
+
+### We worked in stages, sometimes in parallel and sometimes in order:
+
+#### 1. The first stage was the initial cleaning and analysis of the data:
+The first stage involved data processing: replacing missing values and categories such as "Unknown", handling outliers, and converting columns to numeric representation (such as One-Hot Encoding). Distributions of various characteristics were examined among patients with and without stroke – for example, age, smoking, marital status, underlying diseases, and more – to understand which of them may be associated with stroke risk.
+
+#### 2. The second stage – discovering insights with data mining techniques
+Using the Association Rules (FP Growth) algorithm, recurring rules were identified among the patients, such as "most smokers do not suffer from stroke" or "patients with certain underlying diseases are at high risk". Next, we performed clustering using K-Means and divided the population into similar groups. For example, we saw that stroke tends to concentrate in a few specific clusters, while in others it almost does not appear – which indicated a potential For early triage of patients.
+
+
+#### 3. Step Three – Building Stroke Prediction Models
+We went through prediction stages using machine learning models: such as
+Random Forest and XGBoost
+And finally a deep neural network. (Deep Neural Network)
+
+
+**In order to improve performance, SMOTE was used** to balance the distribution of groups (due to the small number of stroke cases). Sometimes we also used splitting into subgroups to feed the model with a K random samples approach and more...
+The neural network was tuned using Keras Tuner (Hyperband): where parameters such as the number of layers, number of neurons in each layer, learning rate and type of optimizer were selected.
+
+#### 4. Step Four – Performance Analysis and Error Evaluation
+The models were evaluated using metrics such as Precision, Recall, Accuracy and F1 Score, with an emphasis on the model's ability not to miss stroke cases (i.e. high sensitivity to stroke cases Real
+The model was able to detect 72% of stroke cases (deep learning), but sometimes gave false positives with relatively low precision.
+
+**We analyzed model errors:** there were several cases in which the model predicted stroke for healthy patients (False Positives), usually at the statistical limit of the decision – for example, patients with advanced age or high sugar levels, but without a corresponding medical background.
+
+#### General summary and insights
+The work indicates that a combination of statistical analyses, clustering, various ML algorithms and deep learning is able to yield useful clinical insights and even predict stroke with a good level of accuracy. However, the balance of the model must be improved, the decision threshold calibrated and the quality of the information improved to prevent the burden of false positives that doctors rely on. It is equally important to adapt the models to the reality of clinical medical knowledge, so that they can actually help doctors and patients alike in the real world.
+
+
+---
+
+
+## Appendices and sources:
+
+### Appendix 1:
+Linoy, O. (2022, October 30). Normal blood sugar level - What is a normal blood sugar level? All information - Olenik Law Firm. Olenik Linoy - National Insurance Specialist Law Firm. https://www.oleniklaw.co.il/%D7%A8%D7%9E%D7%AA-%D7%A1%D7%95%D7%9B%D7%A8-%D7%AA%D7%A7%D7%99%D7%A0%D7%94/
+BMI for men: Body mass index: Ramsay Health Care UK. Body Mass Index | Ramsay Health Care UK. (n.d.). https://www.ramsayhealth.co.uk/treatments/weight-loss-surgery/bmi/bmi-for-men
+
+### Appendix 2:
+BMI Chart for kids in PDF - download. Template.net. (n.d.). https://www.template.net/editable/94377/bmi-chart-for-kids
+
+### Appendix 3:
+Walker, M. (2024, July 5). Stroke demographics: Who is most at risk and why?. Franciscan Missionaries of Our Lady Health System.
+https://health.fmolhs.org/body/neuroscience/stroke-demographics-who-is-most-at-risk-and-why/
 
 
 
