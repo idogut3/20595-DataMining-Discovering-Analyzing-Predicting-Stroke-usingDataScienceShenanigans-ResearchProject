@@ -381,13 +381,13 @@ Since stroke cases are rare in the original dataset, most of the patterns the al
 
 - I chose a random sample from both groups and joined it together to a new group having equal representation of both stroke cases and none stroke cases.
   
-[x] This allowed my algorithm to focus more on learning the differences between the two groups, and on data that might be related to stroke. This is a common way to make           association rule mining more useful when working with rare events like stroke.
+- [x] This allowed my algorithm to focus more on learning the differences between the two groups, and on data that might be related to stroke. This is a common way to make           association rule mining more useful when working with rare events like stroke.
 
 In addition to balancing the data, I needed to categorize numeric data into "bins" instead of continuous numeric functions:
 So I binned continuous numbers like age, glucose, and BMI into labeled categories like
 "old" or "high glucose". 
 
-[x] This is a necessary process to make the data usable for the FP-Growth algorithm, which needs data that works more like checkboxes (yes/no), rather than numeric                (continuous) numbers without a step This, the algorithm will not be able to find patterns in these important features.
+- [x] This is a necessary process to make the data usable for the FP-Growth algorithm, which needs data that works more like checkboxes (yes/no), rather than numeric                (continuous) numbers without a step This, the algorithm will not be able to find patterns in these important features.
 
 
 
