@@ -601,3 +601,21 @@ stroke_data_table['smoking_status'] = stroke_data_table['smoking_status'].fillna
 df = pd.get_dummies(stroke_data_table, columns=['gender', 'work_type', 'smoking_status'], drop_first=True)
 
 ```
+
+### Results
+
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Silhouette%20Score%20vs%20Number%20of%20Clusters%20.png" width="400">
+</p>
+<br/>
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Silhouette%20Score%20vs%20Number%20of%20Clusters%20100K.png" width="400">
+</p>
+<br/>
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Average%20medical%20features%20per%20cluster.png" width="400">
+</p>
+
+
+
+
