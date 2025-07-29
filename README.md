@@ -838,9 +838,22 @@ max    23.000000           0.0            0.0           0.0        1.000000     
 - Glucose ~137 definitely diabetic
 
 #### Cluster 7 – “Teenagers” – 22 people – 0% experienced a stroke
-Average age: 16
+- Average age: 16
 - Healthy (no high blood pressure/heart disease)
 - Single
 - BMI (~25.5) – (moderately overweight)
+
+
+The groups show the clusters that the algorithm found. It is easy to see that as you get older, there is indeed a sharp increase in the chance of having a stroke. According to the distribution of the residential area, in almost every cluster there are 50% who live in an urban area and 50% who live in a rural area.
+
+- According to the data, there may also be a connection between heart disease and diabetes and a higher risk of stroke.
+According to Appendix 3, approximately 3.1% of the adult population experiences a stroke, and if so, if I were a doctor, I would "keep an eye" on clusters 2,3,4,6 (less on 3), since they show the strongest symptoms of stroke above the general population average.
+
+
+### I took this exercise a step further and said that I would try different other ways to correctly catalog clusters:
+
+For example, remove insignificant data, use a different method for grouping clusters (Agglomerative Clustering).
+Even trying to include different scales to test the quality of the clusters, but in the end no new and significant result was given.
+
 
 
