@@ -467,7 +467,7 @@ Top Frequent Itemsets:
 2   0.935743                         (work_type_children_False)
 
 Top Stroke-Related Rules (Readable):
-rule                                                                                                                        support    confidence      lift
+rules:                                                                                                                        support    confidence      lift
 If [age is old] → Then [stroke = Yes, work type children is False]                                                          45.38%     68.90%          1.39
 If [age is old, gender Other is False] → Then [stroke = Yes, work type children is False]                                   45.38%     68.90%          1.39
 If [age is old] → Then [gender Other is False, stroke = Yes, work type children is False]                                   45.38%     68.90%          1.39
