@@ -604,14 +604,33 @@ df = pd.get_dummies(stroke_data_table, columns=['gender', 'work_type', 'smoking_
 
 ### Results
 
+#### At first I tried testing a small range of clusters, between 2-15 maximum (to see the effect of the catalog into groups.
+
 <p align = 'center'>
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Silhouette%20Score%20vs%20Number%20of%20Clusters.png">
 </p>
+
+** As you can see, the process "was not very successful"** - there was some kind of PEAK for K=8 clusters, but it is certainly much below what was expected with a Silhouette Score that is closer to 0 than to 1 (a little over 0.25) meaning a not very high-quality catalog for different clusters and a great inability to diagnose any cluster.
+
+
+Therefore, I said that I would try to increase the maximum K (and I ran it up to K = 100), yes it is of course not practical to extract medical information from it that can help us predict a stroke and of course the more I define the K as larger and larger, the
+Silhouette Score will increase since at some point it will simply define every point in space as a cluster and therefore reach 100% success. But I wanted to try to see if there would be a significant jump because there are still 5000 records and reaching 100 clusters of ~50 points in each of them with a very high Silhouette Score could really help us perhaps draw a few conclusions about image cataloging.
+
+#### So, here are the results:
+
 <br/>
 <p align = 'center'>
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Silhouette%20Score%20vs%20Number%20of%20Clusters%20100K.png">
 </p>
-<br/>
+
+**Unfortunately, although there is indeed an increase in the Silhouette Score**, this is a negligible and insignificant increase, which is expected from the number of clusters we have. And in fact we reach a situation where the highest Silhouette Score we received is 0.34, a very low number and even disappointing for dividing K = such a large number (98 clusters).
+
+
+Therefore, the most significant information that can perhaps be deduced is for K=8, which we saw in the previous graph, but certainly the conclusions/results that we will receive are not unambiguous and unambiguous for diagnosing stroke, since the Silhouette Score is very low, which indicates that "the information is quite overlapping."
+
+
+### Below are results for K = 8:
+
 <p align = 'center'>
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Average%20medical%20features%20per%20cluster.png">
 </p>
