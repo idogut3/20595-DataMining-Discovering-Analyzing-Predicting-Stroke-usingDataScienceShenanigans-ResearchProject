@@ -1026,6 +1026,7 @@ The work indicates that a combination of statistical analyses, clustering, vario
 
 ### Appendix 1:
 Linoy, O. (2022, October 30). Normal blood sugar level - What is a normal blood sugar level? All information - Olenik Law Firm. Olenik Linoy - National Insurance Specialist Law Firm. https://www.oleniklaw.co.il/%D7%A8%D7%9E%D7%AA-%D7%A1%D7%95%D7%9B%D7%A8-%D7%AA%D7%A7%D7%99%D7%A0%D7%94/
+
 BMI for men: Body mass index: Ramsay Health Care UK. Body Mass Index | Ramsay Health Care UK. (n.d.). https://www.ramsayhealth.co.uk/treatments/weight-loss-surgery/bmi/bmi-for-men
 
 ### Appendix 2:
