@@ -493,7 +493,6 @@ Receives 45.38% support and 68.90% confidence level.
 
 In general the results are pretty much the same and all refer to the fact that there is a high chance of stroke when the age is older.
 
-
 In relation to the first claim:
 This means that 45% of all people in the (balanced) dataset were older people who also had a stroke and did not work as children - and among those who were older, 68.9% had a stroke and matched the rest of the group. 
 
