@@ -375,19 +375,47 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 > FP-Growth is useful because it can uncover hidden associations between patient characteristics—such as age, job type, or smoking status—and the likelihood of having a stroke.
 > Such insights can be valuable for understanding risk factors, guiding medical decisions about a patient, or conducting medical research.
 
-Before running FP-Growth, I had to balance the Data:
+### Before running FP-Growth, I had to balance the Data:
 
 Since stroke cases are rare in the original dataset, most of the patterns the algorithm would find would only reflect the majority who did not have a stroke. To fix this, I split the Data into 2 groups, a “stroke” group and a “non-stroke” group.
 
 - I chose a random sample from both groups and joined it together to a new group having equal representation of both stroke cases and none stroke cases.
-  
-- [x] This allowed my algorithm to focus more on learning the differences between the two groups, and on data that might be related to stroke. This is a common way to make           association rule mining more useful when working with rare events like stroke.
+- [x] This allowed my algorithm to focus more on learning the differences between the two groups, and on data that might be related to stroke. This is a common way to make association rule mining more useful when working with rare events like stroke.
+
+```python
+# ---------------------------
+# Balance the Dataset (for Association Rule Mining)
+# ---------------------------
+df_majority = df[df['stroke'] == 0]
+df_minority = df[df['stroke'] == 1]
+df_balanced = pd.concat([
+    df_majority.sample(n=len(df_minority), random_state=42),
+    df_minority
+]).reset_index(drop=True)
+...
+```
 
 In addition to balancing the data, I needed to categorize numeric data into "bins" instead of continuous numeric functions:
 So I binned continuous numbers like age, glucose, and BMI into labeled categories like
 "old" or "high glucose". 
 
 - [x] This is a necessary process to make the data usable for the FP-Growth algorithm, which needs data that works more like checkboxes (yes/no), rather than numeric                (continuous) numbers without a step This, the algorithm will not be able to find patterns in these important features.
+
+```python
+# Bin continuous variables
+df_trans['age'] = pd.cut(df_trans['age'], bins=[0, 30, 50, 100], labels=['young', 'middle-aged', 'old'])
+# BMI Binning
+df_trans['bmi'] = pd.cut(df_balanced['bmi'],
+                         bins=[0, 18.5, 25, 30, 35, df_balanced['bmi'].max()+1],
+                         labels=['underweight', 'normal', 'overweight', 'obese', 'extremely obese'])
+
+# Glucose Level Binning
+df_trans['avg_glucose_level'] = pd.cut(df_balanced['avg_glucose_level'],
+                                       bins=[0, 70, 100,  df_balanced['avg_glucose_level'].max()+1],
+                                       labels=['hypoglycemic', 'normal', 'diabetic/hyperglycemic'])
+...
+```
+
 
 
 
