@@ -581,4 +581,23 @@ These indices give a clear picture of whether the clustering results may be usef
 
   8. Plotted the results according to each graph.
 
+### General Preprocessing
+```python
 
+# Replace 'Unknown' with NaN in smoking_status
+stroke_data_table['smoking_status'] = stroke_data_table['smoking_status'].replace('Unknown', pd.NA)
+
+# Fill missing values
+stroke_data_table['bmi'] = stroke_data_table['bmi'].fillna(stroke_data_table['bmi'].median())
+stroke_data_table['ever_married'] = stroke_data_table['ever_married'].fillna(stroke_data_table['ever_married'].mode()[0])
+stroke_data_table['Residence_type'] = stroke_data_table['Residence_type'].fillna(stroke_data_table['Residence_type'].mode()[0])
+
+# Convert binary categoricals
+stroke_data_table['ever_married'] = stroke_data_table['ever_married'].map({'Yes': 1, 'No': 0})
+stroke_data_table['Residence_type'] = stroke_data_table['Residence_type'].map({'Urban': 1, 'Rural': 0})
+
+# Restore 'Unknown' for smoking_status and one-hot encode categorical columns
+stroke_data_table['smoking_status'] = stroke_data_table['smoking_status'].fillna('Unknown')
+df = pd.get_dummies(stroke_data_table, columns=['gender', 'work_type', 'smoking_status'], drop_first=True)
+
+```
