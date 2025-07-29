@@ -920,4 +920,26 @@ it compares these predictions to the correct answers, calculates the average err
 
 And this process repeats again and again, for all the data as a quantity The EPOCS – which I defined. (A full cycle of data transfer is called an epoch) – I defined 32 such cycles.
 
+### Best hyperparameters for an example run:
+
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/HyperParameters.png" width="550">
+</p>
+
+#### In the end, here are the hyperparameters I decided on (according to optimization algorithms tested).
+2 hidden layers, 96 parameters in the first and second layers, "ADAM" type optimization algorithm and a very low LR of about 0.0006.
+
+### Results
+
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/EvaluationNN.png" width="700">
+</p>
+
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/NN-ConfuisionMatrix-Threshold-0.5.png" width="450">
+</p>
+
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/NetworkEvaluationSum.png" width="700">
+</p>
 
