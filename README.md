@@ -417,11 +417,32 @@ df_trans['avg_glucose_level'] = pd.cut(df_balanced['avg_glucose_level'],
 ```
 
 **_Regarding blood glucose level & BMI I validated the levels with online medical sources in order to accurately bin the values together._**
-_see sources at the end_
+_see sources at the end._
 
 > [!WARNING]
 > I simplified it for me and binned the values according to the correct ranges for an adult (male). 
 > In a real study, these levels should be considered according to the age of the patient with his other data (sex, gender, diseases / medical history, etc...).
+
+### BMI Range Classification
+
+| BMI Range     | Label            |
+|---------------|------------------|
+| 0 – 18.5      | underweight      |
+| 18.5 – 25     | normal           |
+| 25 – 30       | overweight       |
+| 30 – 35       | obese            |
+| 35 – max+1    | extremely obese  |
+
+### Glucose Range Classification (mg/dL)
+
+| Glucose Range | Label               |
+|----------------|---------------------|
+| 0 – 70         | hypoglycemic        |
+| 70 – 100       | normal              |
+| 100 – max+1    | diabetic/hyperglycemic |
+
+
+
 
 
 
