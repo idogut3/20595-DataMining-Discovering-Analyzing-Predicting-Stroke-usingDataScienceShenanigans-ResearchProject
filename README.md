@@ -901,3 +901,23 @@ Within each hidden layer, the network uses the ReLU activation function and in t
 
 - Sigmoid The goal in the end is to estimate our "chance" of having a stroke in the end on a scale between 0 and 1 so that we can calculate the probability of a stroke as the model estimates it and give a percentage of the model's confidence.
 
+
+
+### Output and Learning:
+
+The model is trained to minimize the loss function, which in this case I defined as binary_crossentropy.
+
+Since we are predicting whether a patient has had a stroke (1) or not (0) –
+a binary classification problem – this is one of the cost functions that fits the problem.
+
+It works quite simply, after the model predicts a probability (e.g. 0.9 for stroke or 0.1 for no stroke) the function compares it to the actual answer (1 or 0).
+If the "guess" is very far off, the penalty (error) will be large. If it is close, the penalty will be small.
+The model tries to minimize this error by adjusting its internal weights (and the other hyperparameters I mentioned).
+During training, the model also tracks Accuracy, Precision, Recall and F1 score to help measure its performance, especially in the minority class (stroke cases).
+
+In terms of Batch size we use the default Tensor flow 32 patient records at a time (per batch 32 patients) and make predictions for them,
+it compares these predictions to the correct answers, calculates the average error, updates the model weights.
+
+And this process repeats again and again, for all the data as a quantity The EPOCS – which I defined. (A full cycle of data transfer is called an epoch) – I defined 32 such cycles.
+
+
