@@ -543,7 +543,9 @@ I chose to use k-means clustering approach. It is a fairly simple method to impl
 > - Sometimes the algorithm can get stuck in a local optimum — meaning it may not find the best possible grouping.
 > - It works best when clusters are clearly separated and roughly equal in size — it can struggle with more complex shapes or overlapping data.
 > - Choosing the right number of clusters (k) isn’t always obvious and may require trial and error.
-
+>
+> <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/K-Means-Clustring-gif.gif" width="400">
+>
 
 
 
