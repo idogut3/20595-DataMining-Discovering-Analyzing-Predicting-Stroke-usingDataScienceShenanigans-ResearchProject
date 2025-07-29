@@ -870,6 +870,10 @@ However, we were able to achieve quite impressive results regarding medical insi
 
 ### I wanted to see how the deep nerual network model would work against this dataset soooo...
 
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/neural%20network%20gif.gif" width="550">
+</p>
+
 ### Explanation on the network architecture:
 **My network architecture was determined dynamically (we will detail it later here):**
 
