@@ -602,7 +602,7 @@ df = pd.get_dummies(stroke_data_table, columns=['gender', 'work_type', 'smoking_
 
 ```
 
-### Results
+## Results
 
 #### At first I tried testing a small range of clusters, between 2-15 maximum (to see the effect of the catalog into groups.
 
