@@ -932,7 +932,7 @@ And this process repeats again and again, for all the data as a quantity The EPO
 ### Results
 
 <p align = 'center'>
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/EvaluationNN.png" width="700">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/EvaluationNN.png">
 </p>
 
 <p align = 'center'>
@@ -940,6 +940,6 @@ And this process repeats again and again, for all the data as a quantity The EPO
 </p>
 
 <p align = 'center'>
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/NetworkEvaluationSum.png" width="700">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/NetworkEvaluationSum.png" width="450">
 </p>
 
