@@ -442,8 +442,43 @@ _see sources at the end._
 | 100 – max+1    | diabetic/hyperglycemic |
 
 
+## Results running FP-Growth
+> [!IMPORTANT]
+> Disclaimer: Our goal was to find a connection between data and associations related to stroke, so from all the information the algorithm brought, we filtered out only the conclusions relevant to the stroke that appear with high frequency (within the balanced database > we created).
 
+> [!NOTE]
+> ### Let's briefly recall what support/confidence is:
+> **Support** tells us how common a particular "pattern" or rule is in the data set.
+> For example, if a rule has a support of 45%, this means that it applies to 45% of all patients in your data.
+> 
+> Confidence tells us how likely an outcome (such as a stroke) is, given that the condition in the rule is met.
+> 
+> For example, if a rule has a confidence of 68.9%, this means that when the conditions are met (such as being old), there is a 68.9% chance that the person has had / will have a stroke.
 
+### Results for MIN_SUPPORT = 40%, MIN_CONFIDENCE = 60%
+
+```python
+Top Frequent Itemsets:
+     support                                           itemsets
+0   1.000000                               (gender_Other_False)
+1   0.997992                     (work_type_Never_worked_False)
+20  0.997992  (gender_Other_False, work_type_Never_worked_Fa...
+21  0.935743     (gender_Other_False, work_type_children_False)
+2   0.935743                         (work_type_children_False)
+
+Top Stroke-Related Rules (Readable):
+rule                                                                                                                        support    confidence      lift
+If [age is old] → Then [stroke = Yes, work type children is False]                                                          45.38%     68.90%          1.39
+If [age is old, gender Other is False] → Then [stroke = Yes, work type children is False]                                   45.38%     68.90%          1.39
+If [age is old] → Then [gender Other is False, stroke = Yes, work type children is False]                                   45.38%     68.90%          1.39
+If [age is old, work type Never worked is False] → Then [stroke = Yes, work type children is False]                         45.38%     68.90%          1.39
+If [age is old] → Then [stroke = Yes, work type Never worked is False, work type children is False]                         45.38%     68.90%          1.39
+If [age is old, gender Other is False, work type Never worked is False] → Then [stroke = Yes, work type children is False]  45.38%     68.90%          1.39
+If [age is old, work type Never worked is False] → Then [work type children is False, gender Other is False, stroke = Yes]  45.38%     68.90%          1.39
+If [age is old, gender Other is False] → Then [stroke = Yes, work type Never worked is False, work type children is False]  45.38%     68.90%          1.39
+If [age is old] → Then [work type children is False, gender Other is False, work type Never worked is False, stroke = Yes]  45.38%     68.90%          1.39
+If [age is old] → Then [stroke = Yes]                                                                                       45.38%     68.90%          1.38
+```
 
 
 
