@@ -652,14 +652,14 @@ Cluster 7: 0.00% of all stroke=1 (overall cluster patients=22) => stroke rate in
 ```python
 Number of patients per cluster:
 cluster
-0    1999
-1     690
-2     650
-3     712
-4     761
-5       1
-6     275
-7      22
+0          1999
+1           690
+2           650
+3           712
+4           761
+5             1
+6           275
+7            22
 Name: count, dtype: int64
 ```
 
