@@ -635,6 +635,32 @@ Therefore, the most significant information that can perhaps be deduced is for K
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Average%20medical%20features%20per%20cluster.png">
 </p>
 
+```python
 
+Overall stroke rate in full dataset: 4.87% (249 out of 5110)
+
+Stroke=1 distribution across clusters (adds up to 100%) with counts:
+Cluster 0: 24.90% of all stroke=1 (overall cluster patients=1999) => stroke rate in cluster: 3.10%
+Cluster 1: 0.80% of all stroke=1 (overall cluster patients=690) => stroke rate in cluster: 0.29%
+Cluster 2: 24.50% of all stroke=1 (overall cluster patients=650) => stroke rate in cluster: 9.38%
+Cluster 3: 10.04% of all stroke=1 (overall cluster patients=712) => stroke rate in cluster: 3.51%
+Cluster 4: 20.88% of all stroke=1 (overall cluster patients=761) => stroke rate in cluster: 6.83%
+Cluster 5: 0.00% of all stroke=1 (overall cluster patients=1) => stroke rate in cluster: 0.00%
+Cluster 6: 18.88% of all stroke=1 (overall cluster patients=275) => stroke rate in cluster: 17.09%
+Cluster 7: 0.00% of all stroke=1 (overall cluster patients=22) => stroke rate in cluster: 0.00%
+```
+```python
+Number of patients per cluster:
+cluster
+0    1999
+1     690
+2     650
+3     712
+4     761
+5       1
+6     275
+7      22
+Name: count, dtype: int64
+```
 
 
