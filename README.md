@@ -564,4 +564,14 @@ These indices give a clear picture of whether the clustering results may be usef
 
 #### We used **_Silhouette Score_** because it is popular and easy to implement. 
 
+### The cluster analysis steps are detailed below:
+1. We loaded the data and imported libraries.
+2. We ran the General Preprocessing that we did in the previous models, which includes filling in missing values in various ways (see previous post for explanations – a picture of the code is attached).
+3. We dropped unnecessary parameters in the methods (for example, ID, which does not have a value that can predict a cluster – a random number, and we also dropped stroke = 1/0 because we hope to find groups that divide themselves without "knowing" in advance whether this group has experienced a stroke or not – all in order to know how to search for the given groups that are related to stroke).
+4. We adjusted all the data parameters (the Attributes) to a range between [0,1] since the algorithm can tend to prioritize "large" areas since they "indicate" a sharper difference in the data, which is not true if we want to treat each data in a way that its impact probability is equal to each other.
+5. We ran on a number of possible K-s (to find an optimal number of clusters).
+6. We ran the algorithm (we calculated what each point was expected to be and what its Actual value was).
+7. We calculated the Silhouette Score of the algorithm after the results stage.
+8. Plotted the results according to each graph.
+
 
