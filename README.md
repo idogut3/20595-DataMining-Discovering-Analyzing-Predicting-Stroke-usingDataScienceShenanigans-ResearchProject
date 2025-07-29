@@ -856,7 +856,7 @@ For example, remove insignificant data, use a different method for grouping clus
 Even trying to include different scales to test the quality of the clusters, but in the end no new and significant result was given.
 
 <p align = 'center'>
-<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Agglomerative%20Clustering%20(k%3D5)%20-%20PCA%20Projection.png" width="450">
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Agglomerative%20Clustering%20(k%3D5)%20-%20PCA%20Projection.png" width="550">
 </p>
 
 **This indicates that this approach (clustering) of data mining on medical data "does not work very well"** meaning that the clusters are not able to be separated clearly enough (according to Silhouette Score), it is worth trying to add data from other ages and healthier people (normal BMI/normal blood pressure/normal glucose level) because currently most of the data is not very "positive" in terms of people's health level.
