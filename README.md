@@ -533,11 +533,16 @@ I chose to use k-means clustering approach. It is a fairly simple method to impl
 > 3. After that, it moves the centers to the middle of their group, and reassigns the dots again. This keeps happening - updating the group centers and reassigning points, until the groups don’t change much anymore.
 > 4. The result is clear, separate clusters that are easy to analyze and understand.
 >
-> #### Strengths and weaknesses
-> One of it's biggest strengths is how easy the results are to understand which can help doctors or therapists (or other health professionals) to quickly see which groups of patients share similar risk factors, and what might increase or decrease the chance of having a > stroke.
-> 
-> It's also flexible: you can easily adjust the number of clusters (k) to see what grouping makes the most sense, and compare different results using tools like the silhouette index (see later...) to find the best fit.
-
+> #### Strengths and weaknesses:
+> ##### Strengths:
+> - Easy to understand: Results are simple to interpret, which can help doctors, therapists, and other professionals identify common risk factors among different groups (e.g., stroke patients).
+> - Flexible: You can easily adjust the number of clusters (k) to explore different groupings.
+> - Evaluatable: You can use tools like the silhouette index (see later) to compare and choose the best clustering.
+>
+> ##### Weaknesses:
+> - Sometimes the algorithm can get stuck in a local optimum — meaning it may not find the best possible grouping.
+> - It works best when clusters are clearly separated and roughly equal in size — it can struggle with more complex shapes or overlapping data.
+> - Choosing the right number of clusters (k) isn’t always obvious and may require trial and error.
 
 
 
