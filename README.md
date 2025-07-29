@@ -581,7 +581,7 @@ These indices give a clear picture of whether the clustering results may be usef
 
   8. Plotted the results according to each graph.
 
-### < _General Preprocessing_ >
+### _< General Preprocessing >_
 ```python
 
 # Replace 'Unknown' with NaN in smoking_status
