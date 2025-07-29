@@ -943,3 +943,40 @@ And this process repeats again and again, for all the data as a quantity The EPO
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/NetworkEvaluationSum.png" width="450">
 </p>
 
+
+#### As you can see, the error was very large at first, but as more and more epochs passed, the error decreased as expected.
+
+### Model errors:
+#### The model made several mistakes – including false positives
+False Positives (stroke expected, but no stroke actually occurred):
+In all five examples, the model predicted that the person would experience a stroke, but in reality, they did not experience a stroke. These people had stroke-like characteristics such as:
+- Higher glucose levels (e.g., 208.17 mg/dL – diabetes in one case).
+- Married and older (e.g., 67 years old).
+- Past smoking.
+
+These are all factors that increase the risk of stroke, so the model took the precaution of classifying them as strokes. But in these specific cases, no actual strokes occurred, which shows that the model can sometimes overreact to risk patterns, likely due to a bias to avoid missing actual strokes (i.e., it was optimized for High Recall - which is a good thing, especially in medical cases. "Better safe than sorry in medical cases is the exact phrase to say).
+
+Within the top error results, no false negatives were reported:
+- That is, in this part of the data, the model successfully identified all real strokes. This is a very good sign! And especially important in healthcare, where missing a real stroke is much worse than triggering a false alarm.
+
+
+### Summary on the results for the deep neural network
+
+The network has proven itself in its ability to learn the risks of stroke in the above dataset, things that are important to pay attention to in the future for further work on the Shabbat identification study:
+- More data is needed! 5000 samples is quite low (even more so considering that the amount of strokes in the dataset is even lower) especially for life-threatening diseases. In addition, I would add data related to the patients' brain activity (clinical / non-behavioral information of the patient) since stroke is still a disease that is closely related to the brain and its function. Information about this data can even help us try to understand what the biological factors are under microscopic observation that cause stroke.
+
+- I would also test the network on data outside the dataset (to check that there is no overfitting to this dataset (especially since it is also a dataset with a lot of obese / diabetic / etc. patients and there is not enough information about healthy people).
+
+- In general, I am very satisfied with the results of the network, it reached impressive results of good recall
+
+The model It successfully detected 72% of actual strokes, which is very important in medical settings - this means that it catches most patients who are really at risk.
+It has problems such as very low accuracy for strokes:
+When it does predict strokes - it is wrong 87% of the time. That is, most of the "stroke" predictions are false alarms. This can lead to worry or unnecessary tests in real life.
+The model prefers to catch as many strokes as possible - a kind of compromise, even at the cost of accuracy. And this makes sense for stroke prediction - it is better to over-alert than to miss a real case (this is how I trained it), but the accuracy still needs to improve to be practical in a real environment.
+
+#### The model is promising in terms of recall (it almost never misses real strokes), but its accuracy is too low to be used on its own for diagnosis. It could be useful as an early warning tool, but would need support from additional tests or a review Experts.
+
+
+
+
+
