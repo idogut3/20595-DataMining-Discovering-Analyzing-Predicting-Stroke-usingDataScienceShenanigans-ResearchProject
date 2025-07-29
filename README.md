@@ -483,19 +483,19 @@ If [age is old] → Then [stroke = Yes]                                         
 ### In our results we mainly got the following:
 
 #### "If age is older -> then stroke = yes"
-Receives 45.38% support and 68.9% confidence level.
+  - Receives 45.38% support and 68.9% confidence level.
 
 
 #### "If age is older and gender is female and she worked at least once -> stroke = yes"
-Receives 45.38% support and 68.90% confidence level.
+  - Receives 45.38% support and 68.90% confidence level.
 ...
 
 
 In general the results are pretty much the same and all refer to the fact that there is a high chance of stroke when the age is older.
 
-In relation to the first claim:
-This means that 45% of all people in the (balanced) dataset were older people who also had a stroke and did not work as children - and among those who were older, 68.9% had a stroke and matched the rest of the group. 
+#### In relation to the first claim:
 
+This means that 45% of all people in the (balanced) dataset were older people who also had a stroke and did not work as children - and among those who were older, 68.9% had a stroke and matched the rest of the group. 
 This is a pretty strong and interpretable relationship, especially in healthcare data. The lift value of 1.39 (Lift) shows how strong and significant the rule is - it adapts itself to how common the outcome is in general. In the above case, it shows that this is the most common outcome in 39% of cases.
 
 #### **These results suggest that age is a dominant factor in predicting stroke** – **_which is not surprising_**, but it is important to see this clearly reflected in the data.
@@ -503,15 +503,42 @@ This is a pretty strong and interpretable relationship, especially in healthcare
 
 - It also shows that certain types of work (such as "childhood work = TRUE" or "never worked = FALSE") tend to occur less frequently in stroke cases in older people which could indicate that active people, who have worked since the beginning of their lives / had at least one job are at lower risk of stroke.
 
-#### This is an insight that is less surprising today, since it is known that the more your brain is stimulated throughout your life (and the more you think/try/be active), the lower your chance of experiencing a stroke.
+#### This is an insight that is less surprising today, since it is known that the more your brain is stimulated throughout your life (and the more you are active), the lower your chance of experiencing a stroke.
 
 
-Although these types of rules do not replace a predictive model, they are useful for identifying high-risk groups, building hypotheses, or explaining patterns to stakeholders such as doctors or health care social workers in a simple "if-then" format.
-We should recall and note that in this question we only addressed the conclusions relevant to STROKE, but during the data collection we found more general insights about the data (which are not relevant to the project, so I will not mention most of them), but you can look at And to be interested in the way the data was collected and to conclude that the dataset had data that indicated with high confidence/support the rule that if a woman -> works in the private sector.
-Which is an interesting thing to conclude from this dataset and opens up thoughts about the significance of the data collection and from which regions of the world the data was collected.
-
+> [!NOTE]
+> **Although these types of rules do not replace a predictive model**, they are useful for identifying high-risk groups, building hypotheses, or explaining patterns to stakeholders such as doctors or health care social workers in a simple "if-then" format.
+> 
+> _We should also recall and note that in this question we only addressed the conclusions relevant to STROKE, but during the data collection we found more general insights about the data (which are not relevant to the project, so I will not mention most of them)._
 
 ---
+
+## Predicting using Clustering, AI models
+
+### Our clustring model:
+I chose to use k-means clustering approach. It is a fairly simple method to implement and our database is not "particularly large" (about 5000 records) and so despite the algorithm's inefficiency it is good enough for now. 
+
+> [!NOTE]
+> Later on I used another clustering algorithm to hopefully get better results, so keep scrolling to see the **Agglomerative Clustering approach**.
+
+
+> [!IMPORTANT]
+> ### What is K-Means Clustering
+> K-Means clustering is a simple and intuitive algorithm that groups similar data points together into k clusters, making it easy to spot patterns in complex data.
+> 
+> #### How does it work?
+> Imagine you have a bunch of dots scattered on a page, and you want to divide them into groups. 
+> 1. First, you choose how many groups you want (this is the "k"). 
+> 2. Then, the algorithm randomly picks k points to start as the "centers" of the groups. Each dot is assigned to the nearest center.
+> 3. After that, it moves the centers to the middle of their group, and reassigns the dots again. This keeps happening - updating the group centers and reassigning points, until the groups don’t change much anymore.
+> 4. The result is clear, separate clusters that are easy to analyze and understand.
+>
+> #### Strengths and weaknesses
+> One of it's biggest strengths is how easy the results are to understand which can help doctors or therapists (or other health professionals) to quickly see which groups of patients share similar risk factors, and what might increase or decrease the chance of having a > stroke.
+> 
+> It's also flexible: you can easily adjust the number of clusters (k) to see what grouping makes the most sense, and compare different results using tools like the silhouette index (see later...) to find the best fit.
+
+
 
 
 
