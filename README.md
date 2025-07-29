@@ -482,11 +482,11 @@ If [age is old] → Then [stroke = Yes]                                         
 
 ### In our results we mainly got the following:
 
-"If age is older -> then stroke = yes"
+#### "If age is older -> then stroke = yes"
 Receives 45.38% support and 68.9% confidence level.
 
 
-"If age is older and gender is female and she worked at least once -> stroke = yes"
+#### "If age is older and gender is female and she worked at least once -> stroke = yes"
 Receives 45.38% support and 68.90% confidence level.
 ...
 
@@ -498,6 +498,18 @@ In relation to the first claim:
 This means that 45% of all people in the (balanced) dataset were older people who also had a stroke and did not work as children - and among those who were older, 68.9% had a stroke and matched the rest of the group. 
 
 This is a pretty strong and interpretable relationship, especially in healthcare data. The lift value of 1.39 (Lift) shows how strong and significant the rule is - it adapts itself to how common the outcome is in general. In the above case, it shows that this is the most common outcome in 39% of cases.
+
+#### **These results suggest that age is a dominant factor in predicting stroke** – **_which is not surprising_**, but it is important to see this clearly reflected in the data.
+
+
+- It also shows that certain types of work (such as "childhood work = TRUE" or "never worked = FALSE") tend to occur less frequently in stroke cases in older people which could indicate that active people, who have worked since the beginning of their lives / had at least one job are at lower risk of stroke.
+
+#### This is an insight that is less surprising today, since it is known that the more your brain is stimulated throughout your life (and the more you think/try/be active), the lower your chance of experiencing a stroke.
+
+
+Although these types of rules do not replace a predictive model, they are useful for identifying high-risk groups, building hypotheses, or explaining patterns to stakeholders such as doctors or health care social workers in a simple "if-then" format.
+We should recall and note that in this question we only addressed the conclusions relevant to STROKE, but during the data collection we found more general insights about the data (which are not relevant to the project, so I will not mention most of them), but you can look at And to be interested in the way the data was collected and to conclude that the dataset had data that indicated with high confidence/support the rule that if a woman -> works in the private sector.
+Which is an interesting thing to conclude from this dataset and opens up thoughts about the significance of the data collection and from which regions of the world the data was collected.
 
 
 ---
