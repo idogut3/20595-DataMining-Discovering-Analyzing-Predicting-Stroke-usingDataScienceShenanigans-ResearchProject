@@ -577,7 +577,7 @@ These indices give a clear picture of whether the clustering results may be usef
 
   6. We ran the algorithm (we calculated what each point was expected to be and what its Actual value was).
 
-  7. We calculated the Silhouette Score of the algorithm after the results stage.
+  7. We calculated the **Silhouette Score** of the algorithm after the results stage.
 
   8. Plotted the results according to each graph.
 
