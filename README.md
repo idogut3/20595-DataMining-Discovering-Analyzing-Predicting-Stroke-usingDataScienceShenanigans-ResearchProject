@@ -610,13 +610,13 @@ df = pd.get_dummies(stroke_data_table, columns=['gender', 'work_type', 'smoking_
 <img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Silhouette%20Score%20vs%20Number%20of%20Clusters.png">
 </p>
 
-** As you can see, the process "was not very successful"** - there was some kind of PEAK for K=8 clusters, but it is certainly much below what was expected with a Silhouette Score that is closer to 0 than to 1 (a little over 0.25) meaning a not very high-quality catalog for different clusters and a great inability to diagnose any cluster.
+**As you can see, the process "was not very successful"** - there was some kind of PEAK for K=8 clusters, but it is certainly much below what was expected with a Silhouette Score that is closer to 0 than to 1 (a little over 0.25) meaning a not very high-quality catalog for different clusters and a great inability to diagnose any cluster.
 
 
-Therefore, I said that I would try to increase the maximum K (and I ran it up to K = 100), yes it is of course not practical to extract medical information from it that can help us predict a stroke and of course the more I define the K as larger and larger, the
+Therefore, I said that **_I would try to increase the maximum K (and I ran it up to K = 100)_**, yes it is of course not practical to extract medical information from it that can help us predict a stroke and of course the more I define the K as larger and larger, the
 Silhouette Score will increase since at some point it will simply define every point in space as a cluster and therefore reach 100% success. But I wanted to try to see if there would be a significant jump because there are still 5000 records and reaching 100 clusters of ~50 points in each of them with a very high Silhouette Score could really help us perhaps draw a few conclusions about image cataloging.
 
-#### So, here are the results:
+#### So, here are the results up to K = 100:
 
 <br/>
 <p align = 'center'>
