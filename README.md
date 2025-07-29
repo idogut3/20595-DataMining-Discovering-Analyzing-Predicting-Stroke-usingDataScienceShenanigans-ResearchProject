@@ -419,7 +419,7 @@ df_trans['avg_glucose_level'] = pd.cut(df_balanced['avg_glucose_level'],
 **_Regarding blood glucose level & BMI I validated the levels with online medical sources in order to accurately bin the values together._**
 _see sources at the end_
 
-> ![WARNING]
+> [!WARNING]
 > I simplified it for me and binned the values according to the correct ranges for an adult (male). 
 > In a real study, these levels should be considered according to the age of the patient with his other data (sex, gender, diseases / medical history, etc...).
 
