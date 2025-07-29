@@ -562,6 +562,6 @@ This metric measures how "dense" each cluster is and how "far apart" the cluster
 This is an internal evaluation index, where the validation of the clustering performance is done using quantities and features inherent in the dataset. A disadvantage of this is that a good value reported by this method does not imply the best information retrieval.
 These indices give a clear picture of whether the clustering results may be useful for identifying patterns related to stroke.
 
-#### We used **_Silhouette Score_**. 
+#### We used **_Silhouette Score_** because it is popular and easy to implement. 
 
 
