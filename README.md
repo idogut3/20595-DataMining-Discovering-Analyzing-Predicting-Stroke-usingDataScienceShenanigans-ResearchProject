@@ -27,7 +27,7 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 
 ---
 
-## Libraries & Tools Used🧰:
+## Libraries & Tools Used🧰
 
 ### Data Handling & Visualization 📊
 - **numpy** - Numerical computing
