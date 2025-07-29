@@ -781,3 +781,66 @@ min    13.000000           0.0            0.0           0.0        0.000000     
 max    23.000000           0.0            0.0           0.0        1.000000         161.280000  44.900000
 
 ```
+
+---
+
+### Result analysis 
+
+#### Cluster 0 - "Adults, Generally Healthy" - 1999 people - 3.10% of this cluster had a stroke
+(16.87% of all stroke patients in the dataset)
+- Average age: 42
+- Very low blood pressure (1.1%)
+- No heart disease
+- 68% married
+- Live in - Balanced urban/rural (50/50)
+- BMI: 29.7 (moderately overweight)
+- Average glucose level: 101 (near normal but above normal)
+
+#### Cluster 1 - Children - 690 people - 0.29% of this cluster had a stroke
+- Average age: ~7
+- No high blood pressure or heart disease
+- All single
+- BMI (~20) healthy
+- Glucose level ~94 Great.
+
+#### Cluster 2 – Adults, Some Hypertension – 650 people – 9.38% of this cluster experienced a stroke
+- Age: ~60
+- 43% have hypertension
+- No heart disease
+- 87% married
+- BMI ~30.9 (critically overweight)
+- Glucose: High (116) – High risk of type 2 diabetes.
+
+#### Cluster 3 – Adults, Not so healthy – 712 people – 3.51% of this cluster experienced a stroke
+- Age: 45
+- 9% have hypertension
+- No heart disease
+- 76% married
+- BMI: 30.4 (critically overweight)
+- Glucose: 106- High risk of type 2 diabetes.
+
+#### Cluster 4 – Adults, Menopause – 761 - 6.83% of this cluster experienced a stroke
+- Age: 54
+- 8% with hypertension
+- No heart disease
+- 83% married
+- BMI ~30.7 (critically overweight)
+- , glucose ~108 High risk of type 2 diabetes.
+
+#### Cluster 5 – "Exception (single point)" Only one person can be ignored.
+
+#### Cluster 6 – “Elderly with Heart Disease” – 275 people – 17.09% of this cluster experienced a stroke
+- Average age: 68
+- 100% have heart disease
+- 88% married
+- 23% have high blood pressure
+- BMI 30~ (critically overweight)
+- Glucose ~137 definitely diabetic
+
+#### Cluster 7 – “Teenagers” – 22 people – 0% experienced a stroke
+Average age: 16
+- Healthy (no high blood pressure/heart disease)
+- Single
+- BMI (~25.5) – (moderately overweight)
+
+
