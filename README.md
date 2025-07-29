@@ -480,7 +480,27 @@ If [age is old] → Then [work type children is False, gender Other is False, wo
 If [age is old] → Then [stroke = Yes]                                                                                       45.38%     68.90%          1.38
 ```
 
+### In our results we mainly got the following:
 
+"If age is older -> then stroke = yes"
+Receives 45.38% support and 68.9% confidence level.
+
+
+"If age is older and gender is female and she worked at least once -> stroke = yes"
+Receives 45.38% support and 68.90% confidence level.
+...
+
+
+In general the results are pretty much the same and all refer to the fact that there is a high chance of stroke when the age is older.
+
+
+In relation to the first claim:
+This means that 45% of all people in the (balanced) dataset were older people who also had a stroke and did not work as children - and among those who were older, 68.9% had a stroke and matched the rest of the group. 
+
+This is a pretty strong and interpretable relationship, especially in healthcare data. The lift value of 1.39 (Lift) shows how strong and significant the rule is - it adapts itself to how common the outcome is in general. In the above case, it shows that this is the most common outcome in 39% of cases.
+
+
+---
 
 
 
