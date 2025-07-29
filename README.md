@@ -16,7 +16,7 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 > I encourage you to scroll on to dive deeper into the project.
 
 > [!NOTE]
-> The project was made in 2 parts so the placement of the readme contents might be a bit "off" apologies in advance.
+> The project was made in 2 parts (and 3 different files) so the placement of the readme contents might be a bit "off" apologies in advance.
 
 > [!TIP]
 > Explanations about the importance of stroke prediction and comparison of different methods can be read in the following articles published in the journal Nature in 2024 at the following addresses:
