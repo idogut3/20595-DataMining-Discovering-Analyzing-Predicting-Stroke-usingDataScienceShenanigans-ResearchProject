@@ -855,5 +855,12 @@ According to Appendix 3, approximately 3.1% of the adult population experiences 
 For example, remove insignificant data, use a different method for grouping clusters (Agglomerative Clustering).
 Even trying to include different scales to test the quality of the clusters, but in the end no new and significant result was given.
 
+<p align = 'center'>
+<img src="https://github.com/idogut3/20595-DataMining-Discovering-Analyzing-Predicting-Stroke-usingDataScienceShenanigans-ResearchProject/blob/main/images%26gifs/Agglomerative%20Clustering%20(k%3D5)%20-%20PCA%20Projection.png" width="450">
+</p>
 
+**This indicates that this approach (clustering) of data mining on medical data "does not work very well"** meaning that the clusters are not able to be separated clearly enough (according to Silhouette Score), it is worth trying to add data from other ages and healthier people (normal BMI/normal blood pressure/normal glucose level) because currently most of the data is not very "positive" in terms of people's health level.
+
+
+However, we were able to achieve quite impressive results regarding medical insights from clustering into different clusters, but since the clusters overlap quite a bit, I would consider adding more data to the study that are essentially different from all the other clusters (for example, healthy adults and elderly people and people who are underweight/normal weight). And I would consider turning to other models (statisticians or AI, ML, Deep Learning).
 
