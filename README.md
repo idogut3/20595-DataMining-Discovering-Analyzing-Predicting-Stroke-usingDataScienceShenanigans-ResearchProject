@@ -8,47 +8,6 @@ It's goal is to find as many "early signs" for stroke, helping doctors / nurses 
 In a lot of ways its much more of a research project foucusing on the data, diving into medical proven facts and using those facts and known factors to test, verify, and evaluate our models, than a "regular" data-science project
 with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> operate).
 
-### Libraries used📚🎧☕:
-
-#### Data Handling & Visualization📊
-- numpy - Numerical computing
-- pandas - Data manipulation and analysis
-- matplotlib.pyplot - Plotting and visualizations
-- seaborn — Statistical data visualization
-
-#### Preprocessing & Pipelines
-- sklearn.impute.SimpleImputer - Handling missing values
-- sklearn.preprocessing.OneHotEncoder, StandardScaler - Encoding & scaling
-- sklearn.compose.ColumnTransformer - Feature transformation
-- sklearn.pipeline.Pipeline - Building processing pipelines
-
-#### Dealing with Imbalanced Data ⚖️
-- imblearn.over_sampling.SMOTE - Synthetic minority oversampling
-
-#### Machine Learning Models🧠
-- sklearn.ensemble.RandomForestClassifier - Random Forest
-- xgboost.XGBClassifier - Gradient boosting
-
-#### Model Evaluation 📈
-- sklearn.metrics:
-  accuracy_score, precision_score, recall_score, f1_score
-  confusion_matrix, classification_report, silhouette_score
-  
-#### Model Selection
-- sklearn.model_selection.train_test_split — Train/test splitting
-
-#### Clustering & Dimensionality Reduction📦
-- sklearn.cluster.KMeans, AgglomerativeClustering - Clustering algorithms
-- sklearn.decomposition.PCA — Principal component analysis
-
-#### Association Rule Learning
-- mlxtend.frequent_patterns.fpgrowth
-- mlxtend.frequent_patterns.association_rules
-
-- Environment & Data Access📦
-- kagglehub - Download datasets from Kaggle Hub
-- os - Operating system interface
-
 > [!NOTE]
 > The Link for the dataset I used: [kaggle dataset link](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data).
 
@@ -65,6 +24,49 @@ with the ci/cd mindset (plan -> code -> build -> test -> release -> deploy -> op
 > [Predictive modelling and identification of key risk factors for stroke using machine learning](https://www.nature.com/articles/s41598-024-61665-4)
 > 
 > [Explainable artificial intelligence for stroke prediction through comparison of deep learning and machine learning models](https://www.nature.com/articles/s41598-024-82931-5)
+
+---
+
+## Libraries & Tools Used🧰:
+
+### Data Handling & Visualization 📊
+- **numpy** - Numerical computing
+- **pandas** - Data manipulation and analysis
+- **matplotlib.pyplot** - Plotting and visualizations
+- **seaborn** - Statistical data visualization
+
+### Preprocessing & Pipelines
+- **sklearn.impute.SimpleImputer** - Handling missing values
+- **sklearn.preprocessing.OneHotEncoder, StandardScaler** - Encoding & scaling
+- **sklearn.compose.ColumnTransformer** - Feature transformation
+- **sklearn.pipeline.Pipeline** - Building processing pipelines
+
+### Dealing with Imbalanced Data⚖️
+- imblearn.over_sampling.SMOTE - Synthetic minority oversampling
+
+### Machine Learning Models
+- sklearn.ensemble.RandomForestClassifier - Random Forest
+- xgboost.XGBClassifier - Gradient boosting
+
+### Model Evaluation📈
+#### **sklearn.metrics:**
+accuracy_score, precision_score, recall_score, f1_score
+confusion_matrix, classification_report, silhouette_score
+
+### Model Selection
+- sklearn.model_selection.train_test_split - Train/test splitting
+
+### Clustering & Dimensionality Reduction
+- **sklearn.cluster.KMeans, AgglomerativeClustering - Clustering algorithms**
+- **sklearn.decomposition.PCA - Principal component analysis**
+
+### Association Rule Learning
+- **mlxtend.frequent_patterns.fpgrowth**
+- **mlxtend.frequent_patterns.association_rules**
+
+### Environment & Data Access📦
+- **kagglehub** - Download datasets from Kaggle Hub
+- **os** - Operating system interface
 
 ---
 
