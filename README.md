@@ -376,12 +376,18 @@ Random Forest, with slightly better accuracy and precision, may be suitable in e
 > Such insights can be valuable for understanding risk factors, guiding medical decisions about a patient, or conducting medical research.
 
 Before running FP-Growth, I had to balance the Data:
+
 Since stroke cases are rare in the original dataset, most of the patterns the algorithm would find would only reflect the majority who did not have a stroke. To fix this, I split the Data into 2 groups, a “stroke” group and a “non-stroke” group.
-From the large group (Majority class) – which did not have a stroke, I randomly took a number equal to the group size of the small group that did have a stroke (Minority class),
-In other words, I took the same number of non-stroke cases as stroke cases and created A new balanced dataset. This allowed my algorithm to focus more on learning the differences between the two groups, and on data that might be related to stroke (rather than just other inferences). This is a common and fair way to make association rule mining more useful when working with rare events like stroke. It is a legitimate and correct way that is similar to methods used globally, in industry and academia (which is why I did it this way).
+
+- I chose a random sample from both groups and joined it together to a new group having equal representation of both stroke cases and none stroke cases.
+  
+[x] This allowed my algorithm to focus more on learning the differences between the two groups, and on data that might be related to stroke. This is a common way to make           association rule mining more useful when working with rare events like stroke.
+
 In addition to balancing the data, I needed to categorize numeric data into "bins" instead of continuous numeric functions:
-I binned continuous numbers like age, glucose, and BMI into labeled categories like
-"old" or "high glucose". This is a necessary process to make the data usable for the FP-Growth algorithm, which needs data that works more like checkboxes (yes/no), rather than numeric (continuous) numbers without a step This, the algorithm will not be able to find patterns in these important features.
+So I binned continuous numbers like age, glucose, and BMI into labeled categories like
+"old" or "high glucose". 
+
+[x] This is a necessary process to make the data usable for the FP-Growth algorithm, which needs data that works more like checkboxes (yes/no), rather than numeric                (continuous) numbers without a step This, the algorithm will not be able to find patterns in these important features.
 
 
 
